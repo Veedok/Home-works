@@ -1003,6 +1003,7 @@ p {
 }
 
 /*СТИЛИ PRODUCT*/
+/*Стили Pink line*/
 .product_h1 {
     display: flex;
     justify-content: space-between;
@@ -1028,73 +1029,337 @@ p {
     color: #636363;
 
 }
+
 .way {
 
-font-weight: 700;
-color: #f16d7f;
+    font-weight: 700;
+    color: #f16d7f;
 }
+
+/*Стили основного блок*/
+/*Стили левого меню выбор*/
 .all_products {
     margin-top: 60px;
-        display: flex;
+    display: flex;
     justify-content: space-between;
 }
+
 .choice_menu {
     width: 243px;
 
 }
+
 .showroom {
     width: 847px;
-    height: 20px;
-    background-color: aqua;
 }
+
 .choise_menu {
     font-family: Lato;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ef5b70;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #ebebeb;
+
+
+}
+
+.your_choice::-webkit-details-marker {
+
+    display: inline-block;
+    color: #ef5b70;
+    font-family: FontAwesome;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ef5b70;
+}
+
+.your_choice {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 37px;
+    padding-left: 11px;
+    box-shadow: -5px 0px 0px 0px #ef5b70;
+}
+
+.choice_menu_a {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 33px;
+    font-weight: 400;
+    color: #6f6e6e;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.choice_menu_a:hover {
+    font-weight: 600;
+}
+
+.choice_menu ul {
+    padding-left: 11px;
+}
+
+.choice_menu li {
+    list-style-type: none;
+
+}
+
+/*Стили для формы*/
+.options {
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+}
+
+.trending_now {
+    flex-basis: 30%;
+}
+
+.trending_now ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+
+}
+
+.trending_now a {
+    padding-right: 12px;
+    text-decoration: none;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #6f6e6e;
+    border-right: 1px solid #dfdfdf;
+}
+
+.trending_now span {font-family: Lato;
 font-size: 14px;
 line-height: 20px;
 font-weight: 700;
 text-transform: uppercase;
-color: #ef5b70;
-    margin-bottom: 18px;
-    border-bottom: 1px solid #ebebeb;
-    
-    
+color: #6f6e6e;}
+.trending_now li {
+    flex-basis: 30%;
+    list-style-type: none;
+    display: inline;
 }
-.your_choice::-webkit-details-marker {
-    
-    display: inline-block;
-    color: #ef5b70;
-    font-family: FontAwesome;
-font-size: 14px;
-line-height: 19px;
-font-weight: 400;
-text-transform: uppercase;
-color: #ef5b70;
-}
-.your_choice {
-        display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
+
+/*Стили grey line*/
+.grey_line {
+    margin: 45px 0px;
+    height: 50px;
+    background-color: #f3f3f3;
+    display: flex;
     align-items: center;
-   height: 37px;
-    padding-left: 11px;
-      box-shadow: -5px 0px 0px 0px #ef5b70;
 }
-.choice_menu_a {
-   font-family: Lato;
+
+.drop_down_list {
+    display: flex;
+    margin-left: 10px;
+}
+
+/*
+.drop_down_list button {
+    width: 119px;
+height: 30px;
+background-color: #ffffff;
+border: 1px solid #ebebeb;
+    font-family: Lato;
 font-size: 14px;
-line-height: 33px;
+line-height: 26px;
 font-weight: 400;
 color: #6f6e6e;
-        text-decoration: none;
-    text-transform: none;
 }
-.choice_menu_a:hover{
-    font-weight: 600;
-}
-.choice_menu ul {
-    padding-left: 11px;
-}
-.choice_menu li {
-    list-style-type: none;
+*/
 
+.drop_down_list option,
+select,
+button {
+    padding-left: 12px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ebebeb;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #6f6e6e;
+}
+
+
+/*Cтили для основного каталога*/
+.product_catalog a {
+    text-decoration: none;
+}
+
+.product_catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.catalog_card:hover {
+    transform: scale(1.05);
+    transition-duration: 0.2s;
+    box-shadow: -5px 5px 15px #bebebe;
+}
+
+.catalog_card {
+    flex-basis: 31%;
+    background-color: #ffffff;
+    width: 263px;
+    height: 364px;
+    margin-bottom: 38px;
+
+}
+
+/*Стили для селектора страниц*/
+
+.view_pages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pager_number a {
+    text-decoration: none;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #c4c4c4;
+}
+
+.pager_number {
+    list-style-type: none;
+    display: inline;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #c4c4c4;
+
+
+}
+
+.pager_number:hover a {
+    text-decoration: underline;
+}
+
+.activ_page a {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #ef5b70;
+}
+
+.pager ul {
+
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 261px;
+    height: 44px;
+    background-color: #ffffff;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+}
+
+.view_all {
+
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 800;
+    color: #ef5b70;
+    width: 150px;
+    height: 44px;
+    background-color: #ffffff;
+    border: 1px solid #ef5b70;
+    border-radius: 3px;
+}
+
+.view_all:hover {
+    color: #ffffff;
+    background-color: #ef5b70;
+}
+
+/*Стили для полосы преимущиств*/
+.black_line {
+    margin-top: 110px;
+    width: 100%;
+    height: 341px;
+    background-color: #222224;
+    display: flex;
+    align-items: center;
+}
+
+.icon_advantages_1 {
+    height: 50px;
+    width: 50px;
+    background-image: url(../img/icon-delivery.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon_advantages_2 {
+    height: 50px;
+    width: 50px;
+    background-image: url(../img/icon-sale.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon_advantages_3 {
+    height: 50px;
+    width: 50px;
+    background-image: url(../img/icon-quantity.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.black_line_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 28%;
+}
+
+.advantages h2 {
+    font-family: Lato;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #fbfbfb;
+}
+
+.advantages span {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #fbfbfb;
+}
+
+.feedback_product {
+    margin-top: 0;
 }
