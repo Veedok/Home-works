@@ -115,12 +115,14 @@ body {
 }
 
 .search-field {
+    height: 40px;
     padding: 11px 15px;
     border: 1px solid #e6e6e6;
     border-radius: 0px 3px 3px 0px;
 }
 
 .search-btn {
+    height: 40px;
     border: 1px solid #e6e6e6;
     border-radius: 0px 3px 3px 0px;
     background-color: #fff;
@@ -342,7 +344,7 @@ p {
 }
 
 .head_text {
-text-align: center;
+    text-align: center;
 }
 
 .head_text h2 {
@@ -515,6 +517,7 @@ text-align: center;
     font-weight: 700;
     color: #ffffff;
 }
+
 .buy_item {
     display: flex;
     justify-content: center;
@@ -911,15 +914,19 @@ text-align: center;
 .links li {
     margin-left: 8px;
 }
+
 .social:hover {
     background-color: #f16d7f;
 }
+
 .social:active {
     background-color: #ededed;
 }
+
 .social:hover > .link {
     color: aliceblue;
 }
+
 .link {
     margin-top: 6px;
     width: 20px;
@@ -992,7 +999,8 @@ text-align: center;
 }
 
 .your_choice::-webkit-details-marker {
-
+    display: none;
+    /*
     display: inline-block;
     color: #ef5b70;
     font-family: FontAwesome;
@@ -1001,16 +1009,28 @@ text-align: center;
     font-weight: 400;
     text-transform: uppercase;
     color: #ef5b70;
+*/
 }
 
 .your_choice {
     display: flex;
     justify-content: space-between;
-    flex-direction: row-reverse;
     align-items: center;
     height: 37px;
     padding-left: 11px;
     box-shadow: -5px 0px 0px 0px #ef5b70;
+}
+
+.your_choice::after {
+    content: "\f0d8";
+    font-family: FontAwesome;
+    margin-right: 6px;
+}
+
+.choice_menu [open] .your_choice::after {
+    content: "\f0d7";
+    font-family: FontAwesome;
+    margin-right: 6px;
 }
 
 .choice_menu_a {
@@ -1039,11 +1059,12 @@ text-align: center;
 /*Стили для формы*/
 .options {
     display: flex;
-    align-content: space-around;
-    align-items: center;
+
+    justify-content: space-between;
 }
 
 .trending_now {
+    min-height: 115px;
     flex-basis: 30%;
 }
 
@@ -1082,6 +1103,119 @@ text-align: center;
     display: inline;
 }
 
+.size {
+    min-height: 115px;
+}
+
+.size span {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6f6e6e;
+}
+
+.size ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.size li {
+    flex-basis: 24%;
+    list-style-type: none;
+    display: inline;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #6f6e6e;
+}
+
+.size input {
+    width: 13px;
+    height: 13px;
+    background-color: #ffffff;
+    border: 1px solid #ebebeb;
+}
+
+.price span {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6f6e6e;
+}
+
+.price {
+    width: 260px;
+    min-height: 115px;
+    flex-basis: 30%;
+
+}
+
+.range-controls {
+    position: relative;
+    height: 41px;
+    margin-bottom: 15px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+.range-controls .scale {
+    height: 5px;
+    background: #f0f0f0;
+}
+
+.range-controls .bar {
+    width: 50%;
+    height: 5px;
+    background: #f06d7f;
+    ;
+    margin-left: 20%;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 15.5px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border: none;
+    padding: 0;
+    background-color: #f16d7f;
+    ;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: 20%;
+}
+
+.range-controls .toggle-max {
+    left: 64%;
+}
+
+.price_number {
+margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.price_number li {
+    list-style-type: none;
+    font-family: Lato;
+line-height: 26px;
+font-weight: 400;
+color: #6f6e6e;
+}
 /*Стили grey line*/
 .grey_line {
     margin: 45px 0px;
