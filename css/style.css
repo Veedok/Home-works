@@ -1204,18 +1204,20 @@ p {
 }
 
 .price_number {
-margin-bottom: 0;
+    margin-bottom: 0;
     display: flex;
     justify-content: space-between;
     padding: 0;
 }
+
 .price_number li {
     list-style-type: none;
     font-family: Lato;
-line-height: 26px;
-font-weight: 400;
-color: #6f6e6e;
+    line-height: 26px;
+    font-weight: 400;
+    color: #6f6e6e;
 }
+
 /*Стили grey line*/
 .grey_line {
     margin: 45px 0px;
@@ -1230,23 +1232,11 @@ color: #6f6e6e;
     margin-left: 10px;
 }
 
-/*
-.drop_down_list button {
-    width: 119px;
-height: 30px;
-background-color: #ffffff;
-border: 1px solid #ebebeb;
-    font-family: Lato;
-font-size: 14px;
-line-height: 26px;
-font-weight: 400;
-color: #6f6e6e;
-}
-*/
 
-.drop_down_list option,
-select,
-button {
+
+.drop_down_bth,
+.drop_down_select,
+.drop_down_option {
     padding-left: 12px;
     height: 30px;
     background-color: #ffffff;
@@ -1424,4 +1414,186 @@ button {
 
 .feedback_product {
     margin-top: 0;
+}
+
+/*Стили для страницы товара*/
+/*Стили для изоброжения товара*/
+.single_scroll {
+    width: 100%;
+    min-height: 777px;
+    background-color: #f7f7f7;
+    border: 1px solid #eaeaea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.single_product_img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.scroll {
+    padding: 9px;
+    margin-right: 0;
+    width: 47px;
+    height: 47px;
+    background-color: rgba(42, 42, 42, 0.14);
+
+}
+
+.scroll i {
+    padding-top: 2px;
+    font-family: FontAwesome;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+
+.product_description {
+        display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -86px;
+    position: relative;
+    width: 1140px;
+    height: 730px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+}
+.full_description {
+        display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 73px;
+    border-bottom: 1px solid #eaeaea;
+}
+.collection {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #f16d7f;
+}
+
+.product_name {
+    margin-bottom: 73px;
+    font-family: Lato;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #4d4d4d;
+}
+
+.detailed_description {
+        width: 620px;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #5e5e5e;
+}
+
+
+.characteristics {
+    display: flex;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.characteristics span {
+    display: flex;
+    color: #b9b9b9;
+    margin: 0 20px;
+}
+
+.characteristics p {
+    color: #2f2f2f;
+}
+
+.single_price {font-family: Lato;
+font-size: 24px;
+line-height: 24px;
+font-weight: 700;
+color: #ef5b70;}
+
+.soingle_product_form {
+    width: 540px;
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.soingle_product_colour {
+    
+}
+
+.spcs {
+    padding-left: 15px;
+  width: 144px;
+height: 35px;
+background-color: #ffffff;
+border: 1px solid #eaeaea;
+    font-family: Lato;
+font-size: 13px;
+line-height: 24px;
+font-weight: 400;
+color: #bcbcbc;
+}
+.soingle_product_size {
+    
+}
+.soingle_product_size select {
+    padding-left: 15px;
+    font-family: Lato;
+font-size: 13px;
+line-height: 24px;
+font-weight: 400;
+color: #bcbcbc;
+    width: 144px;
+height: 35px;
+background-color: #ffffff;
+border: 1px solid #eaeaea;
+   
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+    
+.soingle_product_btn {
+flex-basis: 100%;
+    width: 537px;
+height: 55px;
+background-color: #ffffff;
+border: 1px solid #ef5b70;
+}
+
+.options_name {
+   display: block;
+    font-family: Lato;
+font-size: 14px;
+font-weight: 700;
+color: #2f2f2f;
+}
+.soingle_product_quantity input {
+    padding-left: 15px;
+    font-family: Lato;
+font-size: 13px;
+line-height: 24px;
+font-weight: 400;
+color: #bcbcbc;
+    width: 144px;
+height: 35px;
+background-color: #ffffff;
+border: 1px solid #eaeaea;
+    
 }
