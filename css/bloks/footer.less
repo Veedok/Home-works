@@ -1,0 +1,251 @@
+@import "../variables-mixins.less";
+/*Cтили Footer*/
+/*Cтили feedback*/
+.feedback_container {
+    display: flex;
+}
+
+.feedback {
+    display: block;
+    width: 100%;
+    height: 438px;
+    background-color: rgba(242, 242, 242, 0.5);
+    margin-top: 97px;
+}
+
+.feedback_bkg {
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    margin: 0 auto;
+    width: 100%;
+    height: 438px;
+    background-color: rgba(242, 242, 242, 0.5);
+}
+
+.coment {
+    margin-right: 72px;
+    display: flex;
+    padding-top: 111px;
+}
+
+.coment_img {
+    width: 83px;
+    height: 83px;
+
+    background-image: url(../img/review1.png);
+    background-repeat: no-repeat;
+    margin-right: 28px;
+}
+
+.coment_text {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.025em;
+    color: #222224;
+}
+
+.coment_slyder {
+    margin-top: 41px;
+    display: flex;
+}
+
+.coment_grey {
+    margin-right: 13px;
+    width: 38px;
+    height: 4px;
+    background-color: #d6d6d6;
+}
+
+.coment_pink {
+    margin-right: 13px;
+    width: 38px;
+    height: 4px;
+    background-color: @main-pink;
+}
+
+.coment_name {
+    margin-top: 19px;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: @main-pink;
+}
+
+.coment_name_2 {
+    font-family: Lato;
+    letter-spacing: 0.025em;
+    color: @main-pink;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 300;
+    color: #222224;
+
+}
+
+.coment_line {
+    width: 1px;
+    height: 438px;
+    background-color: #ffffff;
+}
+
+.email {
+    margin: 148px 0px 0px 92px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email_text {
+
+    font-family: Lato;
+    font-size: 24px;
+    line-height: 54px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #222224;
+
+
+}
+
+.email div {}
+
+.feedback_form {
+    margin-top: 35px;
+    display: flex;
+}
+
+.feedback_email {
+    border: none;
+    outline: none;
+    padding-left: 28px;
+    width: 282px;
+    height: 46px;
+    background-color: #e1e1e1;
+    border-radius: 23px 0px 0px 23px;
+}
+
+.feedback_btn {
+    border: none;
+    outline: none;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    width: 104px;
+    height: 46px;
+    background-color: @main-pink;
+    border-radius: 0px 23px 23px 0px;
+}
+
+/*Стили more_nav*/
+
+.more_nav_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 109px;
+}
+
+.more_nav_text {
+    width: 427px;
+}
+
+.more h2 {
+    font-family: Lato;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: @main-pink;
+}
+
+.more a {
+    line-height: 42px;
+    text-decoration: none;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #898989;
+
+}
+
+.more ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.more_big_text {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #898989;
+}
+
+/*Стили last line*/
+.last_line {
+    margin-top: 89px;
+    width: 100%;
+    height: 79px;
+    background-color: #e6e6e6;
+}
+
+.last_line_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.last_line_container li {
+    list-style-type: none;
+}
+
+.links {
+    display: flex;
+}
+
+.links li {
+    margin-left: 8px;
+}
+
+.social:hover {
+    background-color: @main-pink;
+}
+
+.social:active {
+    background-color: #ededed;
+}
+
+.social:hover > .link {
+    color: aliceblue;
+}
+
+.link {
+    margin-top: 6px;
+    width: 20px;
+    height: 20px;
+    color: #b3b3b3;
+}
