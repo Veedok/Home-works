@@ -21,11 +21,6 @@ body {
   opacity: 0;
   visibility: hidden;
 }
-.pink_background_all_pages {
-  width: 100%;
-  height: 148px;
-  background-color: #f8f3f4;
-}
 /* Стили Header*/
 .header {
   background-color: #fff;
@@ -40,13 +35,13 @@ body {
 .logo-link {
   display: flex;
   align-items: center;
-  font-size: 27px;
-  line-height: 32px;
-  font-weight: 300;
-  text-transform: uppercase;
   letter-spacing: 0.025em;
   color: #222222;
   text-decoration: none;
+  font-family: Lato;
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 300;
 }
 .pink {
   color: #f16d7f;
@@ -61,6 +56,7 @@ body {
   align-items: center;
 }
 .browse-btn {
+  font-family: Lato;
   font-size: 14px;
   line-height: 38px;
   font-weight: 300;
@@ -84,6 +80,7 @@ body {
 }
 .account {
   background-color: #f16d7f;
+  font-family: Lato;
   font-size: 15px;
   line-height: 38px;
   font-weight: 400;
@@ -118,15 +115,16 @@ body {
 }
 /* Стили Nav*/
 .menu {
-  font-family: Lato;
-  font-size: 14px;
-  font-weight: 900;
   text-transform: uppercase;
   color: #222222;
   text-decoration: none;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 900;
 }
 .menu:hover {
-  border-bottom: 3px solid #f16d7f;
+  border-bottom: 5px solid #f16d7f;
   padding-bottom: 15px;
 }
 nav {
@@ -136,6 +134,53 @@ nav {
 nav ul li {
   display: inline;
   margin-left: 46px;
+}
+/*Стили Pink line*/
+.pink_background_all_pages {
+  width: 100%;
+  height: 148px;
+  background-color: #f8f3f4;
+}
+.product_h1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.product_h1 h1 {
+  margin-top: 60px;
+  text-transform: uppercase;
+  color: #f16d7f;
+  font-family: Lato;
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 900;
+}
+.breadcrumbs a {
+  margin-top: 60px;
+  text-transform: uppercase;
+  color: #636363;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+}
+.breadcrumbs ol {
+  padding: 0;
+  margin: 0;
+}
+.breadcrumbs ol :last-child a {
+  font-weight: 700;
+  color: #f16d7f;
+}
+.breadcrumbs ol :not(:last-child)::after {
+  content: "/";
+}
+.breadcrumbs_li {
+  list-style-type: none;
+  display: inline;
+}
+.breadcrumbs_li a {
+  text-decoration: none;
 }
 /*CТИЛИ INDEX*/
 /*Cили main*/
@@ -163,12 +208,12 @@ nav ul li {
 }
 .promo_h2 {
   margin-bottom: -4px;
+  letter-spacing: 0.025em;
+  color: #222222;
   font-family: Lato;
   font-size: 60px;
   line-height: 1.2;
   font-weight: 900;
-  letter-spacing: 0.025em;
-  color: #222222;
 }
 .promo_p_black {
   font-size: 40px;
@@ -202,23 +247,23 @@ p {
   background-color: #000000;
 }
 .kids:hover {
-  transform: scale(1.03);
-  transition-duration: 0.5s;
+  transform: scale(1.05);
+  transition-duration: 0.7s;
   box-shadow: -5px 5px 15px #bebebe;
 }
 .accoseriese:hover {
-  transform: scale(1.03);
-  transition-duration: 0.5s;
+  transform: scale(1.05);
+  transition-duration: 0.7s;
   box-shadow: -5px 5px 15px #bebebe;
 }
 .women:hover {
-  transform: scale(1.03);
-  transition-duration: 0.5s;
+  transform: scale(1.05);
+  transition-duration: 0.7s;
   box-shadow: -5px 5px 15px #bebebe;
 }
 .mens:hover {
-  transform: scale(1.03);
-  transition-duration: 0.5s;
+  transform: scale(1.05);
+  transition-duration: 0.7s;
   box-shadow: -5px 5px 15px #bebebe;
 }
 .mens {
@@ -234,24 +279,24 @@ p {
   background-image: url(../img/cat-3.png);
 }
 .pink_text {
-  font-size: 30px;
   color: #f16d7f;
-  font-family: Lato;
-  line-height: 1.2;
-  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.025em;
   text-decoration: none;
-}
-.black_text {
   font-family: Lato;
-  font-size: 18px;
+  font-size: 30px;
   line-height: 1.2;
   font-weight: 900;
+}
+.black_text {
   text-transform: uppercase;
   letter-spacing: 0.025em;
   color: #222222;
   text-decoration: none;
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 900;
 }
 .kids {
   padding-top: 27px;
@@ -259,27 +304,23 @@ p {
 }
 .mens_text {
   padding: 16px;
-  width: 175px;
-  height: 82px;
   background-color: #ffffff;
+  display: inline-block;
 }
 .accoseriese_text {
-  padding: 16px 18px;
-  width: 225px;
-  height: 82px;
+  padding: 16px;
   background-color: #ffffff;
+  display: inline-block;
 }
 .women_text {
-  padding: 16px 19px 16px 15px;
-  width: 162px;
-  height: 82px;
+  padding: 16px;
   background-color: #ffffff;
+  display: inline-block;
 }
 .kids_text {
   padding: 16px;
-  width: 180px;
-  height: 82px;
   background-color: #ffffff;
+  display: inline-block;
 }
 /* Стили Catalog*/
 .catalog_container {
@@ -293,20 +334,20 @@ p {
 }
 .head_text h2 {
   margin: 0;
+  letter-spacing: 0.025em;
+  color: #222222;
   font-family: Lato;
   font-size: 30px;
   line-height: 54px;
   font-weight: 700;
-  letter-spacing: 0.025em;
-  color: #222222;
 }
 .head_text p {
+  letter-spacing: 0.025em;
+  color: #9f9f9f;
   font-family: Lato;
   font-size: 14px;
   line-height: 54px;
   font-weight: 400;
-  letter-spacing: 0.025em;
-  color: #9f9f9f;
 }
 .catalog_content {
   margin-top: 60px;
@@ -316,16 +357,16 @@ p {
 }
 .content_btn {
   border: 0px;
-  font-family: lato;
-  font-size: 15px;
-  line-height: 44px;
-  font-weight: 400;
   letter-spacing: 0.025em;
   color: #ffffff;
   margin-top: 79px;
   width: 212px;
   height: 48px;
   background-color: #f16d7f;
+  font-family: Lato;
+  font-size: 15px;
+  line-height: 44px;
+  font-weight: 400;
 }
 .content_btn:hover {
   background-color: #ef566b;
@@ -372,42 +413,42 @@ p {
 }
 .items_1:hover {
   transform: scale(1.05);
-  transition-duration: 1s;
+  transition-duration: 0.7s;
   box-shadow: -5px 5px 15px #bebebe;
 }
 .items_2:hover {
   transform: scale(1.05);
-  transition-duration: 1s;
+  transition-duration: 0.7s;
   box-shadow: -5px 5px 15px #bebebe;
 }
 .items_3:hover {
   transform: scale(1.05);
-  transition-duration: 1s;
+  transition-duration: 0.7s;
   box-shadow: -5px 5px 15px #bebebe;
 }
 .items_4:hover {
   transform: scale(1.05);
-  transition-duration: 1s;
+  transition-duration: 0.7s;
   box-shadow: -5px 5px 15px #bebebe;
 }
 .items_5:hover {
   transform: scale(1.05);
-  transition-duration: 1s;
+  transition-duration: 0.7s;
   box-shadow: -5px 5px 15px #bebebe;
 }
 .items_6:hover {
   transform: scale(1.05);
-  transition-duration: 1s;
+  transition-duration: 0.7s;
   box-shadow: -5px 5px 15px #bebebe;
 }
 .items_7:hover {
   transform: scale(1.05);
-  transition-duration: 1s;
+  transition-duration: 0.7s;
   box-shadow: -5px 5px 15px #bebebe;
 }
 .items_8:hover {
   transform: scale(1.05);
-  transition-duration: 1s;
+  transition-duration: 0.7s;
   box-shadow: -5px 5px 15px #bebebe;
 }
 .item_mask a {
@@ -422,11 +463,12 @@ p {
   opacity: 0;
 }
 .buy_item span {
-  font-family: Lato;
   text-decoration: none;
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 13px;
   line-height: 1.2;
   font-weight: 700;
-  color: #ffffff;
 }
 .buy_item {
   display: flex;
@@ -452,7 +494,6 @@ p {
   background-image: url(../img/item-4.png);
   background-repeat: no-repeat;
   background-position: top;
-  margin-right: 0;
 }
 .items_5 {
   background-image: url(../img/item-5.png);
@@ -473,25 +514,24 @@ p {
   background-image: url(../img/item-8.png);
   background-repeat: no-repeat;
   background-position: top;
-  margin-right: 0;
 }
 .catalog_text {
   margin: 19px 0px 17px 15px;
+  text-transform: uppercase;
+  color: #222222;
   font-family: Lato;
   font-size: 13px;
   line-height: 1.2;
   font-weight: 600;
-  text-transform: uppercase;
-  color: #222222;
 }
 .catalog_price {
   margin: 0px 0px 21px 14px;
+  text-transform: uppercase;
+  color: #f16d7f;
   font-family: Lato;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 700;
-  text-transform: uppercase;
-  color: #f16d7f;
 }
 /* Стили info*/
 .sales {
@@ -510,54 +550,53 @@ p {
   margin-left: 36px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .img_text {
   padding-top: 146px;
   padding-left: 39px;
 }
 .big_text {
+  letter-spacing: 0.025em;
+  color: #ffffff;
   font-family: Lato;
   font-size: 53.7px;
   line-height: 1.2;
   font-weight: 700;
-  letter-spacing: 0.025em;
-  color: #ffffff;
 }
 .litle_text {
-  font-family: Lato;
-  line-height: 1.2;
-  font-weight: 700;
   letter-spacing: 0.025em;
   color: #ffffff;
+  font-family: Lato;
   font-size: 32.2px;
+  line-height: 1.2;
+  font-weight: 700;
 }
 .big_pink_text {
   color: #f16d7f;
 }
 .sales_text_1 {
   display: flex;
-  margin-top: 48px;
 }
 .sales_text img {
   margin-right: 30px;
 }
 .sales_text h2 {
   margin: 0px 0px 17px 0px;
+  letter-spacing: 0.025em;
+  color: #fbfbfb;
   font-family: Lato;
   font-size: 20px;
   line-height: 1.2;
   font-weight: 700;
-  letter-spacing: 0.025em;
-  color: #fbfbfb;
 }
 .sales_text p {
+  letter-spacing: 0.025em;
+  color: #fbfbfb;
   font-family: Lato;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
-  letter-spacing: 0.025em;
-  color: #fbfbfb;
 }
 .sales_text_2 {
   display: flex;
@@ -566,48 +605,6 @@ p {
   display: flex;
 }
 /*СТИЛИ PRODUCT*/
-/*Стили Pink line*/
-.product_h1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-.product_h1 h1 {
-  margin-top: 60px;
-  font-family: Lato;
-  font-size: 24px;
-  line-height: 20px;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #f16d7f;
-}
-.breadcrumbs a {
-  margin-top: 60px;
-  font-family: Lato;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 300;
-  text-transform: uppercase;
-  color: #636363;
-}
-.breadcrumbs ol {
-  padding: 0;
-  margin: 0;
-}
-.breadcrumbs ol :last-child a {
-  font-weight: 700;
-  color: #f16d7f;
-}
-.breadcrumbs ol :not(:last-child)::after {
-  content: "/";
-}
-.breadcrumbs_li {
-  list-style-type: none;
-  display: inline;
-}
-.breadcrumbs_li a {
-  text-decoration: none;
-}
 /*Стили основного блок*/
 /*Стили левого меню выбор*/
 .all_products {
@@ -622,19 +619,21 @@ p {
   width: 847px;
 }
 .choise_menu {
-  font-family: Lato;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 700;
   text-transform: uppercase;
   color: #f16d7f;
   margin-bottom: 18px;
   border-bottom: 1px solid #ebebeb;
+  outline: none;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
 }
 .your_choice::-webkit-details-marker {
   display: none;
 }
 .your_choice {
+  outline: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -653,13 +652,13 @@ p {
   margin-right: 6px;
 }
 .choice_menu_a {
+  color: #6f6e6e;
+  text-decoration: none;
+  text-transform: none;
   font-family: Lato;
   font-size: 14px;
   line-height: 33px;
   font-weight: 400;
-  color: #6f6e6e;
-  text-decoration: none;
-  text-transform: none;
 }
 .choice_menu_a:hover {
   font-weight: 600;
@@ -689,20 +688,20 @@ p {
 .trending_now a {
   padding-right: 12px;
   text-decoration: none;
+  color: #6f6e6e;
+  border-right: 1px solid #dfdfdf;
   font-family: Lato;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  color: #6f6e6e;
-  border-right: 1px solid #dfdfdf;
 }
 .trending_now span {
+  text-transform: uppercase;
+  color: #6f6e6e;
   font-family: Lato;
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
-  text-transform: uppercase;
-  color: #6f6e6e;
 }
 .trending_now li {
   flex-basis: 30%;
@@ -713,12 +712,12 @@ p {
   min-height: 115px;
 }
 .size span {
+  text-transform: uppercase;
+  color: #6f6e6e;
   font-family: Lato;
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
-  text-transform: uppercase;
-  color: #6f6e6e;
 }
 .size ul {
   padding: 0;
@@ -730,12 +729,12 @@ p {
   flex-basis: 24%;
   list-style-type: none;
   display: inline;
+  text-transform: uppercase;
+  color: #6f6e6e;
   font-family: Lato;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  text-transform: uppercase;
-  color: #6f6e6e;
 }
 .size input {
   width: 13px;
@@ -744,12 +743,12 @@ p {
   border: 1px solid #ebebeb;
 }
 .price span {
+  text-transform: uppercase;
+  color: #6f6e6e;
   font-family: Lato;
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
-  text-transform: uppercase;
-  color: #6f6e6e;
 }
 .price {
   width: 260px;
@@ -825,11 +824,11 @@ p {
   height: 30px;
   background-color: #ffffff;
   border: 1px solid #ebebeb;
+  color: #6f6e6e;
   font-family: Lato;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  color: #6f6e6e;
 }
 /*Cтили для основного каталога*/
 .product_catalog a {
@@ -860,30 +859,30 @@ p {
 }
 .pager_number a {
   text-decoration: none;
+  color: #c4c4c4;
   font-family: Lato;
   font-size: 16px;
   line-height: 26px;
   font-weight: 600;
-  color: #c4c4c4;
 }
 .pager_number {
   list-style-type: none;
   display: inline;
+  color: #c4c4c4;
   font-family: Lato;
   font-size: 16px;
   line-height: 26px;
   font-weight: 600;
-  color: #c4c4c4;
 }
 .pager_number:hover a {
   text-decoration: underline;
 }
 .activ_page a {
+  color: #f16d7f;
   font-family: Lato;
   font-size: 16px;
   line-height: 26px;
   font-weight: 600;
-  color: #f16d7f;
 }
 .pager ul {
   padding: 0 15px;
@@ -897,16 +896,16 @@ p {
   border-radius: 3px;
 }
 .view_all {
-  font-family: Lato;
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 800;
   color: #f16d7f;
   width: 150px;
   height: 44px;
   background-color: #ffffff;
   border: 1px solid #f16d7f;
   border-radius: 3px;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 800;
 }
 .view_all:hover {
   color: #ffffff;
@@ -953,20 +952,20 @@ p {
   flex-basis: 28%;
 }
 .advantages h2 {
+  letter-spacing: 0.025em;
+  color: #fbfbfb;
   font-family: Lato;
   font-size: 20px;
   line-height: 1.2;
   font-weight: 700;
-  letter-spacing: 0.025em;
-  color: #fbfbfb;
 }
 .advantages span {
+  letter-spacing: 0.025em;
+  color: #fbfbfb;
   font-family: Lato;
   font-size: 14px;
   line-height: 23px;
   font-weight: 300;
-  letter-spacing: 0.025em;
-  color: #fbfbfb;
 }
 .feedback_product {
   margin-top: 0;
@@ -1027,11 +1026,11 @@ p {
 .collection {
   padding-bottom: 15px;
   border-bottom: 1px solid #eaeaea;
+  color: #f16d7f;
   font-family: Lato;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
-  color: #f16d7f;
 }
 .mini_pink_line {
   height: 3px;
@@ -1042,21 +1041,21 @@ p {
 }
 .product_name {
   margin-bottom: 73px;
+  text-transform: uppercase;
+  color: #4d4d4d;
   font-family: Lato;
   font-size: 18px;
   line-height: 24px;
   font-weight: 900;
-  text-transform: uppercase;
-  color: #4d4d4d;
 }
 .detailed_description {
   width: 620px;
   text-align: center;
+  color: #5e5e5e;
   font-family: Lato;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
-  color: #5e5e5e;
 }
 .characteristics {
   margin-top: 30px;
@@ -1075,11 +1074,11 @@ p {
   color: #2f2f2f;
 }
 .single_price {
+  color: #f16d7f;
   font-family: Lato;
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
-  color: #f16d7f;
 }
 .soingle_product_form {
   margin-bottom: 120px;
@@ -1098,23 +1097,23 @@ p {
   height: 35px;
   background-color: #ffffff;
   border: 1px solid #eaeaea;
+  color: #bcbcbc;
   font-family: Lato;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
-  color: #bcbcbc;
 }
 .soingle_product_size select {
   padding-left: 15px;
-  font-family: Lato;
-  font-size: 13px;
-  line-height: 24px;
-  font-weight: 400;
   color: #bcbcbc;
   width: 144px;
   height: 35px;
   background-color: #ffffff;
   border: 1px solid #eaeaea;
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -1124,11 +1123,7 @@ input::-webkit-inner-spin-button {
   background-image: url(../img/forma_1_copy_2587.png);
   background-repeat: no-repeat;
   background-position: center;
-  font-family: Lato;
   background-position-x: 195px;
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 700;
   color: #f16d7f;
   flex-basis: 100%;
   width: 537px;
@@ -1136,6 +1131,10 @@ input::-webkit-inner-spin-button {
   background-color: #ffffff;
   border: 1px solid #f16d7f;
   outline: none;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
 }
 .soingle_product_btn:hover {
   background-color: #f16d7f;
@@ -1146,22 +1145,23 @@ input::-webkit-inner-spin-button {
   margin-top: 67px;
   margin-bottom: 16px;
   display: block;
+  color: #2f2f2f;
   font-family: Lato;
   font-size: 14px;
+  line-height: 24px;
   font-weight: 700;
-  color: #2f2f2f;
 }
 .soingle_product_quantity input {
   padding-left: 15px;
-  font-family: Lato;
-  font-size: 13px;
-  line-height: 24px;
-  font-weight: 400;
   color: #bcbcbc;
   width: 144px;
   height: 35px;
   background-color: #ffffff;
   border: 1px solid #eaeaea;
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 300;
 }
 .like_also {
   margin-top: 119px;
@@ -1174,23 +1174,23 @@ input::-webkit-inner-spin-button {
   margin-bottom: 72px;
   flex-basis: 100%;
   text-align: center;
+  text-transform: uppercase;
+  color: #4d4d4d;
   font-family: Lato;
   font-size: 24px;
   line-height: 20px;
   font-weight: 900;
-  text-transform: uppercase;
-  color: #4d4d4d;
 }
 .like_also a {
   text-decoration: none;
 }
 .like_also_text {
+  text-transform: uppercase;
+  color: #6f6e6e;
   font-family: Lato;
   font-size: 14px;
   line-height: 1.2;
   font-weight: 400;
-  text-transform: uppercase;
-  color: #6f6e6e;
 }
 /*Cтили Footer*/
 /*Cтили feedback*/
@@ -1230,13 +1230,13 @@ input::-webkit-inner-spin-button {
   margin-top: 12px;
   display: flex;
   flex-direction: column;
+  font-style: italic;
+  letter-spacing: 0.025em;
+  color: #222224;
   font-family: Lato;
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
-  font-style: italic;
-  letter-spacing: 0.025em;
-  color: #222224;
 }
 .coment_slyder {
   margin-top: 41px;
@@ -1256,21 +1256,21 @@ input::-webkit-inner-spin-button {
 }
 .coment_name {
   margin-top: 19px;
+  letter-spacing: 0.025em;
+  color: #f16d7f;
   font-family: Lato;
   font-size: 16px;
   line-height: 26px;
   font-weight: 700;
-  letter-spacing: 0.025em;
-  color: #f16d7f;
 }
 .coment_name_2 {
-  font-family: Lato;
   letter-spacing: 0.025em;
   color: #f16d7f;
+  color: #222224;
+  font-family: Lato;
   font-size: 12px;
   line-height: 14px;
   font-weight: 300;
-  color: #222224;
 }
 .coment_line {
   width: 1px;
@@ -1284,13 +1284,13 @@ input::-webkit-inner-spin-button {
   align-items: center;
 }
 .email_text {
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #222224;
   font-family: Lato;
   font-size: 24px;
   line-height: 54px;
   font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.025em;
-  color: #222224;
 }
 .feedback_form {
   margin-top: 35px;
@@ -1308,15 +1308,16 @@ input::-webkit-inner-spin-button {
 .feedback_btn {
   border: none;
   outline: none;
-  font-family: Lato;
-  font-size: 14px;
-  font-weight: 400;
   letter-spacing: 0.025em;
   color: #ffffff;
   width: 104px;
   height: 46px;
   background-color: #f16d7f;
   border-radius: 0px 23px 23px 0px;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 44px;
+  font-weight: 400;
 }
 /*Стили more_nav*/
 .more_nav_container {
@@ -1328,33 +1329,33 @@ input::-webkit-inner-spin-button {
   width: 427px;
 }
 .more h2 {
+  letter-spacing: 0.025em;
+  color: #f16d7f;
   font-family: Lato;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  letter-spacing: 0.025em;
-  color: #f16d7f;
 }
 .more a {
-  line-height: 42px;
   text-decoration: none;
-  font-family: Lato;
-  font-size: 16px;
-  font-weight: 400;
   letter-spacing: 0.025em;
   color: #898989;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 42px;
+  font-weight: 400;
 }
 .more ul {
   list-style-type: none;
   padding: 0;
 }
 .more_big_text {
+  letter-spacing: 0.025em;
+  color: #898989;
   font-family: Lato;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
-  letter-spacing: 0.025em;
-  color: #898989;
 }
 /*Стили last line*/
 .last_line {

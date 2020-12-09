@@ -1,3 +1,6 @@
+// out: nul
+@import "../variables-mixins.less";
+
 /*Стили для страницы товара*/
 /*Стили для изоброжения товара*/
 .single_scroll {
@@ -62,14 +65,12 @@
 .collection {
     padding-bottom: 15px;
     border-bottom: 1px solid #eaeaea;
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 700;
     color: @main-pink;
+    .text_stayle_mixin(14px, 24px, 700);
 }
+
 .mini_pink_line {
-        height: 3px;
+    height: 3px;
     width: 63px;
     background-color: @main-pink;
     position: absolute;
@@ -78,32 +79,23 @@
 
 .product_name {
     margin-bottom: 73px;
-    font-family: Lato;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 900;
     text-transform: uppercase;
     color: #4d4d4d;
+    .text_stayle_mixin(18px, 24px, 900);
 }
 
 .detailed_description {
     width: 620px;
     text-align: center;
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 300;
     color: #5e5e5e;
+    .text_stayle_mixin(14px, 24px, 300);
 }
 
 
 .characteristics {
     margin-top: 30px;
     display: flex;
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 700;
+    .text_stayle_mixin(14px, 24px, 700);
 }
 
 .characteristics_black {
@@ -117,11 +109,8 @@
 }
 
 .single_price {
-    font-family: Lato;
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: 700;
     color: @main-pink;
+    .text_stayle_mixin(24px, 24px, 700);
 }
 
 .soingle_product_form {
@@ -144,26 +133,19 @@
     height: 35px;
     background-color: #ffffff;
     border: 1px solid #eaeaea;
-    font-family: Lato;
-    font-size: 13px;
-    line-height: 24px;
-    font-weight: 400;
     color: #bcbcbc;
+    .text_stayle_mixin(13px, 24px, 400);
 }
 
 
 .soingle_product_size select {
     padding-left: 15px;
-    font-family: Lato;
-    font-size: 13px;
-    line-height: 24px;
-    font-weight: 400;
     color: #bcbcbc;
     width: 144px;
     height: 35px;
     background-color: #ffffff;
     border: 1px solid #eaeaea;
-
+    .text_stayle_mixin(13px, 24px, 400);
 }
 
 input::-webkit-outer-spin-button,
@@ -175,11 +157,7 @@ input::-webkit-inner-spin-button {
     background-image: url(../img/forma_1_copy_2587.png);
     background-repeat: no-repeat;
     background-position: center;
-    font-family: Lato;
     background-position-x: 195px;
-    font-size: 16px;
-    line-height: 1.2;
-    font-weight: 700;
     color: @main-pink;
     flex-basis: 100%;
     width: 537px;
@@ -187,6 +165,7 @@ input::-webkit-inner-spin-button {
     background-color: #ffffff;
     border: 1px solid @main-pink;
     outline: none;
+    .text_stayle_mixin(16px, 1.2, 700);
 }
 
 .soingle_product_btn:hover {
@@ -194,55 +173,48 @@ input::-webkit-inner-spin-button {
     background-image: url(../img/cart111.png);
     color: #ffffff;
 }
+
 .options_name {
     margin-top: 67px;
     margin-bottom: 16px;
     display: block;
-    font-family: Lato;
-    font-size: 14px;
-    font-weight: 700;
     color: #2f2f2f;
+    .text_stayle_mixin(14px, 24px, 700);
 }
 
 .soingle_product_quantity input {
     padding-left: 15px;
-    font-family: Lato;
-    font-size: 13px;
-    line-height: 24px;
-    font-weight: 400;
     color: #bcbcbc;
     width: 144px;
     height: 35px;
     background-color: #ffffff;
     border: 1px solid #eaeaea;
-
+    .text_stayle_mixin(13px, 24px, 300);
 }
+
 .like_also {
     margin-top: 119px;
     margin-bottom: 73px;
-        display: flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .like_also h2 {
     margin-bottom: 72px;
     flex-basis: 100%;
     text-align: center;
-    font-family: Lato;
-font-size: 24px;
-line-height: 20px;
-font-weight: 900;
-text-transform: uppercase;
-color: #4d4d4d;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    .text_stayle_mixin(24px, 20px, 900);
 }
+
 .like_also a {
     text-decoration: none;
 }
+
 .like_also_text {
-    font-family: Lato;
-font-size: 14px;
-line-height: 1.2;
-font-weight: 400;
-text-transform: uppercase;
-color: #6f6e6e;
+    text-transform: uppercase;
+    color: #6f6e6e;
+    .text_stayle_mixin(14px, 1.2, 400);
 }

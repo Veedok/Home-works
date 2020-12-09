@@ -1,15 +1,16 @@
+// out: null
+@import "../variables-mixins.less";
+
 /* Стили Nav*/
 .menu {
-    font-family: Lato;
-    font-size: 14px;
-    font-weight: 900;
     text-transform: uppercase;
     color: #222222;
     text-decoration: none;
+    .text_stayle_mixin(14px, 17px, 900);
 }
 
 .menu:hover {
-    border-bottom: 3px solid @main-pink;
+    border-bottom: 5px solid @main-pink;
     padding-bottom: 15px;
 }
 

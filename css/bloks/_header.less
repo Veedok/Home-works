@@ -1,4 +1,6 @@
+// out: null
 @import "../variables-mixins.less";
+
 /* Стили Header*/
 .header {
     background-color: #fff;
@@ -15,14 +17,10 @@
 .logo-link {
     display: flex;
     align-items: center;
-
-    font-size: 27px;
-    line-height: 32px;
-    font-weight: 300;
-    text-transform: uppercase;
     letter-spacing: 0.025em;
     color: #222222;
     text-decoration: none;
+    .text_stayle_mixin(27px, 32px, 300)
 }
 
 .pink {
@@ -42,9 +40,7 @@
 }
 
 .browse-btn {
-    font-size: 14px;
-    line-height: 38px;
-    font-weight: 300;
+    .text_stayle_mixin(14px, 38px, 300);
     letter-spacing: 0.025em;
     color: #222222;
     background-color: #cdcdcc;
@@ -64,14 +60,12 @@
 }
 
 .account:hover {
-    background-color: darken(@main-pink,5%);
+    background-color: darken(@main-pink, 5%);
 }
 
 .account {
     background-color: @main-pink;
-    font-size: 15px;
-    line-height: 38px;
-    font-weight: 400;
+    .text_stayle_mixin(15px, 38px, 400);
     letter-spacing: 0.025em;
     color: #ffffff;
     padding: 0px 15px;

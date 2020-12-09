@@ -1,3 +1,4 @@
+// out: null
 @import "../variables-mixins.less";
 
 /*CТИЛИ INDEX*/
@@ -30,14 +31,10 @@
 }
 
 .promo_h2 {
-
     margin-bottom: -4px;
-    font-family: Lato;
-    font-size: 60px;
-    line-height: 1.2;
-    font-weight: 900;
     letter-spacing: 0.025em;
     color: #222222;
+    .text_stayle_mixin(60px, 1.2, 900);
 
 }
 
@@ -67,14 +64,12 @@ p {
 
 .hot_deal_big {
     margin: 20px 20px 20px 0;
-
     width: 560px;
     height: 542px;
     background-color: #000000;
 }
 
 .hot_deal_litle {
-
     margin: 20px 20px 20px 0;
     width: 560px;
     height: 261px;
@@ -82,27 +77,19 @@ p {
 }
 
 .kids:hover {
-    transform: scale(1.03);
-    transition-duration: 0.5s;
-    box-shadow: -5px 5px 15px #bebebe;
+    .transform();
 }
 
 .accoseriese:hover {
-    transform: scale(1.03);
-    transition-duration: 0.5s;
-    box-shadow: -5px 5px 15px #bebebe;
+    .transform();
 }
 
 .women:hover {
-    transform: scale(1.03);
-    transition-duration: 0.5s;
-    box-shadow: -5px 5px 15px #bebebe;
+    .transform();
 }
 
 .mens:hover {
-    transform: scale(1.03);
-    transition-duration: 0.5s;
-    box-shadow: -5px 5px 15px #bebebe;
+    .transform();
 }
 
 .mens {
@@ -121,25 +108,19 @@ p {
 }
 
 .pink_text {
-    font-size: 30px;
     color: @main-pink;
-    font-family: Lato;
-    line-height: 1.2;
-    font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 0.025em;
     text-decoration: none;
+    .text_stayle_mixin(30px, 1.2, 900);
 }
 
 .black_text {
-    font-family: Lato;
-    font-size: 18px;
-    line-height: 1.2;
-    font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 0.025em;
     color: #222222;
     text-decoration: none;
+    .text_stayle_mixin(18px, 1.2, 900);
 }
 
 .kids {
@@ -148,31 +129,19 @@ p {
 }
 
 .mens_text {
-    padding: 16px;
-    width: 175px;
-    height: 82px;
-    background-color: #ffffff;
+    .hot_deal_mixin();
 }
 
 .accoseriese_text {
-    padding: 16px 18px;
-    width: 225px;
-    height: 82px;
-    background-color: #ffffff;
+    .hot_deal_mixin();
 }
 
 .women_text {
-    padding: 16px 19px 16px 15px;
-    width: 162px;
-    height: 82px;
-    background-color: #ffffff;
+    .hot_deal_mixin();
 }
 
 .kids_text {
-    padding: 16px;
-    width: 180px;
-    height: 82px;
-    background-color: #ffffff;
+    .hot_deal_mixin();
 }
 
 /* Стили Catalog*/
@@ -189,21 +158,15 @@ p {
 
 .head_text h2 {
     margin: 0;
-    font-family: Lato;
-    font-size: 30px;
-    line-height: 54px;
-    font-weight: 700;
     letter-spacing: 0.025em;
     color: #222222;
+    .text_stayle_mixin(30px, 54px, 700);
 }
 
 .head_text p {
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 54px;
-    font-weight: 400;
     letter-spacing: 0.025em;
     color: #9f9f9f;
+    .text_stayle_mixin(14px, 54px, 400);
 }
 
 .catalog_content {
@@ -217,16 +180,13 @@ p {
 
 .content_btn {
     border: 0px;
-    font-family: lato;
-    font-size: 15px;
-    line-height: 44px;
-    font-weight: 400;
     letter-spacing: 0.025em;
     color: #ffffff;
     margin-top: 79px;
     width: 212px;
     height: 48px;
     background-color: @main-pink;
+    .text_stayle_mixin(15px, 44px, 400);
 }
 
 .content_btn:hover {
@@ -329,11 +289,9 @@ p {
 }
 
 .buy_item span {
-    font-family: Lato;
     text-decoration: none;
-    line-height: 1.2;
-    font-weight: 700;
     color: #ffffff;
+    .text_stayle_mixin(13px, 1.2, 700);
 }
 
 .buy_item {
@@ -363,7 +321,6 @@ p {
     background-image: url(../img/item-4.png);
     background-repeat: no-repeat;
     background-position: top;
-    margin-right: 0;
 }
 
 .items_5 {
@@ -388,28 +345,20 @@ p {
     background-image: url(../img/item-8.png);
     background-repeat: no-repeat;
     background-position: top;
-    margin-right: 0;
 }
 
 .catalog_text {
     margin: 19px 0px 17px 15px;
-    font-family: Lato;
-    font-size: 13px;
-    line-height: 1.2;
-    font-weight: 600;
     text-transform: uppercase;
     color: #222222;
+    .text_stayle_mixin(13px, 1.2, 600);
 }
 
 .catalog_price {
-
     margin: 0px 0px 21px 14px;
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 1.2;
-    font-weight: 700;
     text-transform: uppercase;
     color: @main-pink;
+    .text_stayle_mixin(16px, 1.2, 700);
 }
 
 /* Стили info*/
@@ -429,10 +378,9 @@ p {
 
 .sales_text {
     margin-left: 36px;
-
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .img_text {
@@ -441,65 +389,45 @@ p {
 }
 
 .big_text {
-
-    font-family: Lato;
-    font-size: 53.7px;
-    line-height: 1.2;
-    font-weight: 700;
     letter-spacing: 0.025em;
     color: #ffffff;
-
+    .text_stayle_mixin(53.7px, 1.2, 700);
 }
 
 .litle_text {
-
-    font-family: Lato;
-    line-height: 1.2;
-    font-weight: 700;
     letter-spacing: 0.025em;
     color: #ffffff;
-    font-size: 32.2px;
+    .text_stayle_mixin(32.2px, 1.2, 700);
 }
 
 .big_pink_text {
-
     color: @main-pink;
 }
 
 .sales_text_1 {
     display: flex;
-    margin-top: 48px;
 }
 
 .sales_text img {
     margin-right: 30px;
-
 }
 
 .sales_text h2 {
     margin: 0px 0px 17px 0px;
-    font-family: Lato;
-    font-size: 20px;
-    line-height: 1.2;
-    font-weight: 700;
     letter-spacing: 0.025em;
     color: #fbfbfb;
+    .text_stayle_mixin(20px, 1.2, 700);
 }
 
 .sales_text p {
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 300;
     letter-spacing: 0.025em;
     color: #fbfbfb;
+    .text_stayle_mixin(14px, 24px, 300);
 }
 
 .sales_text_2 {
     display: flex;
 }
-
-
 
 .sales_text_3 {
     display: flex;

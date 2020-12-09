@@ -1,3 +1,4 @@
+// out: null
 @import "../variables-mixins.less";
 /*Cтили Footer*/
 /*Cтили feedback*/
@@ -43,13 +44,10 @@
     margin-top: 12px;
     display: flex;
     flex-direction: column;
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 400;
     font-style: italic;
     letter-spacing: 0.025em;
     color: #222224;
+    .text_stayle_mixin(16px, 26px, 400);
 }
 
 .coment_slyder {
@@ -73,22 +71,16 @@
 
 .coment_name {
     margin-top: 19px;
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 700;
     letter-spacing: 0.025em;
     color: @main-pink;
+    .text_stayle_mixin(16px, 26px, 700);
 }
 
 .coment_name_2 {
-    font-family: Lato;
     letter-spacing: 0.025em;
     color: @main-pink;
-    font-size: 12px;
-    line-height: 14px;
-    font-weight: 300;
     color: #222224;
+    .text_stayle_mixin(12px, 14px, 300);
 
 }
 
@@ -106,19 +98,12 @@
 }
 
 .email_text {
-
-    font-family: Lato;
-    font-size: 24px;
-    line-height: 54px;
-    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.025em;
     color: #222224;
-
+    .text_stayle_mixin(24px, 54px, 400);
 
 }
-
-.email div {}
 
 .feedback_form {
     margin-top: 35px;
@@ -138,15 +123,13 @@
 .feedback_btn {
     border: none;
     outline: none;
-    font-family: Lato;
-    font-size: 14px;
-    font-weight: 400;
     letter-spacing: 0.025em;
     color: #ffffff;
     width: 104px;
     height: 46px;
     background-color: @main-pink;
-    border-radius: 0px 23px 23px 0px;
+    border-radius: 0px 23px 23px 0px;  
+    .text_stayle_mixin(14px, 44px, 400);
 }
 
 /*Стили more_nav*/
@@ -162,22 +145,16 @@
 }
 
 .more h2 {
-    font-family: Lato;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
     letter-spacing: 0.025em;
     color: @main-pink;
+    .text_stayle_mixin(18px, 26px, 700);
 }
 
 .more a {
-    line-height: 42px;
     text-decoration: none;
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 400;
     letter-spacing: 0.025em;
     color: #898989;
+    .text_stayle_mixin(16px, 42px, 400);
 
 }
 
@@ -187,12 +164,9 @@
 }
 
 .more_big_text {
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 300;
     letter-spacing: 0.025em;
     color: #898989;
+    .text_stayle_mixin(14px, 24px, 300);
 }
 
 /*Стили last line*/

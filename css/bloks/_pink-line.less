@@ -1,0 +1,52 @@
+// out: null
+@import "../variables-mixins.less";
+
+/*Стили Pink line*/
+.pink_background_all_pages {
+    width: 100%;
+    height: 148px;
+    background-color: #f8f3f4;
+}
+
+.product_h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.product_h1 h1 {
+    margin-top: 60px;
+    text-transform: uppercase;
+    color: @main-pink;
+    .text_stayle_mixin(24px, 20px, 900);
+}
+
+.breadcrumbs a {
+    margin-top: 60px;
+    text-transform: uppercase;
+    color: #636363;
+    .text_stayle_mixin(14px, 20px, 300);
+}
+
+.breadcrumbs ol {
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumbs ol :last-child a {
+    font-weight: 700;
+    color: @main-pink;
+}
+
+.breadcrumbs ol :not(:last-child)::after {
+    content: "/";
+}
+
+.breadcrumbs_li {
+    list-style-type: none;
+    display: inline;
+}
+
+.breadcrumbs_li a {
+    text-decoration: none;
+}
