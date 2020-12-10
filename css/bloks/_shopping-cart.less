@@ -77,6 +77,7 @@
 }
 
 .actoon button {
+    cursor: pointer;
     border: none;
     outline: none;
     font-family: FontAwesome;
@@ -95,6 +96,10 @@
 
 }
 
+.s_c_button button:hover {
+    background-color: #efefef;
+    
+}
 .s_c_button button {
     cursor: pointer;
     width: 235px;
@@ -134,6 +139,9 @@
     .text_stayle_mixin(16px, 1.2, 700);
 }
 
+.f-points:focus {
+    background-color: #efefef;
+}
 .f-points {
     outline: none;
     border: none;
@@ -182,10 +190,13 @@
     cursor: pointer;
     width: 273px;
     height: 50px;
-    background-color: #f16d7f;
+    background-color: @main-pink;
     text-transform: uppercase;
     color: #ffffff;
     .text_stayle_mixin(16px, 1.2, 700);
+}
+.total button:hover {
+  background-color:  darken(@main-pink, 5%);
 }
 
 .total hr {
@@ -216,4 +227,7 @@
     text-transform: uppercase;
     color: #4a4a4a;
     .text_stayle_mixin(11px, 1.2, 700);
+}
+.sub_form:hover {
+    background-color: #d8d8d8;
 }

@@ -1268,6 +1268,7 @@ input::-webkit-inner-spin-button {
   margin-right: 10px;
 }
 .actoon button {
+  cursor: pointer;
   border: none;
   outline: none;
   font-family: FontAwesome;
@@ -1282,6 +1283,9 @@ input::-webkit-inner-spin-button {
   margin-top: 45px;
   display: flex;
   justify-content: space-between;
+}
+.s_c_button button:hover {
+  background-color: #efefef;
 }
 .s_c_button button {
   cursor: pointer;
@@ -1323,6 +1327,9 @@ input::-webkit-inner-spin-button {
   font-size: 16px;
   line-height: 1.2;
   font-weight: 700;
+}
+.f-points:focus {
+  background-color: #efefef;
 }
 .f-points {
   outline: none;
@@ -1378,6 +1385,9 @@ input::-webkit-inner-spin-button {
   line-height: 1.2;
   font-weight: 700;
 }
+.total button:hover {
+  background-color: #ef566b;
+}
 .total hr {
   background-color: #e2e2e2;
 }
@@ -1408,6 +1418,9 @@ input::-webkit-inner-spin-button {
   font-size: 11px;
   line-height: 1.2;
   font-weight: 700;
+}
+.sub_form:hover {
+  background-color: #d8d8d8;
 }
 /*Cтили Footer*/
 /*Cтили feedback*/
