@@ -1,0 +1,220 @@
+// out: nul
+@import "../variables-mixins.less";
+
+/*Стили для страницы товара*/
+/*Стили для изоброжения товара*/
+.single_scroll {
+    width: 100%;
+    min-height: 777px;
+    background-color: #f7f7f7;
+    border: 1px solid #eaeaea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.single_product_img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.scroll {
+    padding: 9px;
+    margin-right: 0;
+    width: 47px;
+    height: 47px;
+    background-color: rgba(42, 42, 42, 0.14);
+    border: none;
+    outline: none;
+
+}
+
+.scroll i {
+    padding-top: 2px;
+    font-family: FontAwesome;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+
+.product_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -86px;
+    position: relative;
+    width: 1140px;
+    min-height: 730px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+}
+
+.full_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 73px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.collection {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eaeaea;
+    color: @main-pink;
+    .text_stayle_mixin(14px, 24px, 700);
+}
+
+.mini_pink_line {
+    height: 3px;
+    width: 63px;
+    background-color: @main-pink;
+    position: absolute;
+    margin-top: 52px
+}
+
+.product_name {
+    margin-bottom: 73px;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    .text_stayle_mixin(18px, 24px, 900);
+}
+
+.detailed_description {
+    width: 620px;
+    text-align: center;
+    color: #5e5e5e;
+    .text_stayle_mixin(14px, 24px, 300);
+}
+
+
+.characteristics {
+    margin-top: 30px;
+    display: flex;
+    .text_stayle_mixin(14px, 24px, 700);
+}
+
+.characteristics_black {
+    display: flex;
+    color: #b9b9b9;
+    margin: 0 20px;
+}
+
+.characteristics_gray {
+    color: #2f2f2f;
+}
+
+.single_price {
+    color: @main-pink;
+    .text_stayle_mixin(24px, 24px, 700);
+}
+
+.soingle_product_form {
+    margin-bottom: 120px;
+    width: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.soingle_product_colour {
+    margin-bottom: 30px;
+
+}
+
+.spcs {
+    margin-bottom: 30px;
+    padding-left: 15px;
+    width: 144px;
+    height: 35px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    color: #bcbcbc;
+    .text_stayle_mixin(13px, 24px, 400);
+}
+
+
+.soingle_product_size select {
+    padding-left: 15px;
+    color: #bcbcbc;
+    width: 144px;
+    height: 35px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    .text_stayle_mixin(13px, 24px, 400);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.soingle_product_btn {
+    background-image: url(../img/forma_1_copy_2587.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 195px;
+    color: @main-pink;
+    flex-basis: 100%;
+    width: 537px;
+    height: 55px;
+    background-color: #ffffff;
+    border: 1px solid @main-pink;
+    outline: none;
+    .text_stayle_mixin(16px, 1.2, 700);
+}
+
+.soingle_product_btn:hover {
+    background-color: @main-pink;
+    background-image: url(../img/cart111.png);
+    color: #ffffff;
+}
+
+.options_name {
+    margin-top: 67px;
+    margin-bottom: 16px;
+    display: block;
+    color: #2f2f2f;
+    .text_stayle_mixin(14px, 24px, 700);
+}
+
+.soingle_product_quantity input {
+    padding-left: 15px;
+    color: #bcbcbc;
+    width: 144px;
+    height: 35px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    .text_stayle_mixin(13px, 24px, 300);
+}
+
+.like_also {
+    margin-top: 119px;
+    margin-bottom: 73px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.like_also h2 {
+    margin-bottom: 72px;
+    flex-basis: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    .text_stayle_mixin(24px, 20px, 900);
+}
+
+.like_also a {
+    text-decoration: none;
+}
+
+.like_also_text {
+    text-transform: uppercase;
+    color: #6f6e6e;
+    .text_stayle_mixin(14px, 1.2, 400);
+}

@@ -1,0 +1,36 @@
+@import "variables-mixins.less";
+
+/* Общие стили */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.hidden {
+    position: absolute;
+    left: -99999;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+@import "bloks/_header.less";
+@import "bloks/_nav.less";
+@import "bloks/_pink-line.less";
+@import "bloks/_index.less";
+@import "bloks/_product.less";
+@import "bloks/_single-page.less";
+@import "bloks/_shopping-cart.less";
+
+@import "bloks/_footer.less";

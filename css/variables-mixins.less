@@ -1,0 +1,26 @@
+//out: null
+/* variables */
+
+    @main-pink: #f16d7f;
+
+
+    //mixin
+    .transform() {
+        transform: scale(1.05);
+        transition-duration: 0.7s;
+        box-shadow: -5px 5px 15px #bebebe;
+    }
+
+    .text_stayle_mixin(@size: 24px, @l_hight: 20px, @f_weight: 600) {
+        font-family: Lato;
+        font-size: @size;
+        line-height: @l_hight;
+        font-weight: @f_weight;
+    }
+
+    .hot_deal_mixin() {
+        padding: 16px;
+        background-color: #ffffff;
+        display: inline-block;
+    }
+

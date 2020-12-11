@@ -1,0 +1,233 @@
+// out: null
+@import "../variables-mixins.less";
+
+
+.header_bascet {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 20px;
+}
+
+.header_bascet span {
+    text-transform: uppercase;
+    letter-spacing: -0.015em;
+    color: #222222;
+    .text_stayle_mixin(13px, 20px, 700);
+}
+
+.header_bascet :first-child {
+    flex-basis: 43%;
+}
+
+.goods {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.goods :first-child {
+    flex-basis: 43%;
+
+}
+
+
+.product_details {
+    padding: 25px 0px;
+}
+
+.product_details img {
+    float: left;
+    margin-right: 21px;
+}
+
+.product_details h4 {
+    text-transform: uppercase;
+    color: #222222;
+    .text_stayle_mixin(13px, 1.2, 400);
+}
+
+.const {
+    color: #575757;
+    .text_stayle_mixin(13px, 20px, 400);
+}
+
+.vari,
+.unite_price,
+.shipping,
+.subtotal {
+    color: #6f6e6e;
+    .text_stayle_mixin(13px, 20px, 300);
+}
+
+.quantity input {
+    text-align: center;
+    width: 54px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    color: #656565;
+    .text_stayle_mixin(13px, 20px, 400);
+}
+
+.actoon {
+    margin-right: 10px;
+}
+
+.actoon button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: FontAwesome;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #c0c0c0;
+    background-color: #ffffff;
+}
+
+.s_c_button {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.s_c_button button:hover {
+    background-color: #efefef;
+    
+}
+.s_c_button button {
+    cursor: pointer;
+    width: 235px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    .text_stayle_mixin(14px, 1.2, 700);
+}
+
+.adress_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cupon_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.s_c_form {
+    margin-top: 63px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.s_c_form h5 {
+    color: #000000;
+    .text_stayle_mixin(14px, 1.2, 300);
+}
+
+.s_c_form h4 {
+    text-transform: uppercase;
+    color: #222222;
+    .text_stayle_mixin(16px, 1.2, 700);
+}
+
+.f-points:focus {
+    background-color: #efefef;
+}
+.f-points {
+    outline: none;
+    border: none;
+    color: #b1b1b1;
+    padding: 10px 18px;
+    width: 355px;
+    height: 45px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    margin: 10px 0;
+    .text_stayle_mixin(13px, 1.2, 300);
+
+}
+
+
+.f_p_s {
+    padding: .5em 2.25em .5em 1em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.select {
+  position: relative;
+  display: inline-block;
+  color: #555;
+}
+
+.total {
+    display: inline-table;
+    text-align: end;
+    padding: 43px;
+    background-color: #f5f3f3;
+}
+.select:after {
+    color: #bdbdbd;
+  position: absolute;
+  top: 38%;
+  right: 18px;
+  content: "\f0d7";
+    font-family: FontAwesome;
+}
+
+.total button {
+    margin-top: 17px;
+    border: none;
+    cursor: pointer;
+    width: 273px;
+    height: 50px;
+    background-color: @main-pink;
+    text-transform: uppercase;
+    color: #ffffff;
+    .text_stayle_mixin(16px, 1.2, 700);
+}
+.total button:hover {
+  background-color:  darken(@main-pink, 5%);
+}
+
+.total hr {
+    background-color: #e2e2e2;
+}
+
+.total h6 {
+    margin-top: 0;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    .text_stayle_mixin(11px, 1.2, 400);
+}
+
+.total span {
+    margin-left: 15px;
+}
+
+.total_pink {
+    color: #f16d7f;
+}
+
+.sub_form {
+    cursor: pointer;
+    width: 120px;
+    height: 35px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    .text_stayle_mixin(11px, 1.2, 700);
+}
+.sub_form:hover {
+    background-color: #d8d8d8;
+}

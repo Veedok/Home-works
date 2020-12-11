@@ -1,0 +1,25 @@
+// out: null
+@import "../variables-mixins.less";
+
+/* Стили Nav*/
+.menu {
+    text-transform: uppercase;
+    color: #222222;
+    text-decoration: none;
+    .text_stayle_mixin(14px, 17px, 900);
+}
+
+.menu:hover {
+    border-bottom: 5px solid @main-pink;
+    padding-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 46px;
+}
