@@ -1995,6 +1995,9 @@ h5.r_cvc {
   border: 1px solid #f16d7f;
   color: #f16d7f;
 }
+#test_canvas {
+  border: 1px solid black;
+}
 /*Cтили Footer*/
 /*Cтили feedback*/
 .feedback_container {

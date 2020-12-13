@@ -407,31 +407,95 @@
             </div>
         </details>
 
-        
-        
-            <div class="canvas container">
-                <canvas  id="test_canvas" width="1140px" height="500px" margin="0"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita maxime alias nemo nobis cumque veniam quisquam voluptatum blanditiis ipsum distinctio, nesciunt non voluptas, itaque quod corporis odio, accusantium, deleniti quibusdam quam dolore error fugiat sint facilis quaerat. Quo minus, maxime quisquam aliquam nam, velit nobis similique quos, laboriosam deserunt nihil.</canvas>
-
-                <script>
-                    var canv = document.getElementById('test_canvas'),
-                        ctx = canv.getContext('2d');
-
-                    canv.addEventListener('mousemove', function(e) {
-                        ctx.beginPath();
-                        ctx.arc(e.clientX, e.clientY, 10, 0, Math.PI * 2);
-                        ctx.fill();
-                    });
-
-                </script>
 
 
+        <div class="canvas container">
+            <canvas id="test_canvas" width="1140px" height="500px" margin="0"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita maxime alias nemo nobis cumque veniam quisquam voluptatum blanditiis ipsum distinctio, nesciunt non voluptas, itaque quod corporis odio, accusantium, deleniti quibusdam quam dolore error fugiat sint facilis quaerat. Quo minus, maxime quisquam aliquam nam, velit nobis similique quos, laboriosam deserunt nihil.</canvas>
+
+            <script>
+                var canv = document.getElementById('test_canvas'),
+                    ctx = canv.getContext('2d');
+                //                                    canv.addEventListener('mousemove', function(e) {
+                // ctx.beginPath();
+                // ctx.arc(e.clientX, e.clientY, 10, 0, Math.PI * 2);
+                // ctx.fill();
+                // });
+                var xLine = 10;
+                var yLine = 10;
+
+                function bbb(x, y) {
+                    while (y < 500) {
+                        if (x == 10) {
+                            x = x + 10;
+                        } else {
+                            x = x - 10;
+                        }
+                        ctx.lineTo(x, y);
+                        y = y + 10;
+                        ctx.stroke();
+                    }
+                    while (x < 1140) {
+                        if (y == 480) {
+                            y = y + 10;
+                        } else {
+                            y = y - 10;
+                        }
+                        ctx.lineTo(x, y);
+                        x = x + 10;
+                        ctx.stroke();
+                    }
+                    while (y > 10) {
+                        if (x == 1120) {
+                            x = x + 10;
+                        } else {
+                            x = x - 10;
+                        }
+                        ctx.lineTo(x, y);
+                        y = y - 10;
+                        ctx.stroke();
+                    }
+                    while (x > 0) {
+                        if (y == 10) {
+                            y = y + 10;
+                        } else {
+                            y = y - 10;
+                        }
+                        ctx.lineTo(x, y);
+                        x = x - 10;
+                        ctx.stroke();
+                    }
+
+                };
+
+                ctx.beginPath();
+                ctx.moveTo(20, xLine);
+                bbb(xLine, yLine);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(560, 80);
+                ctx.lineTo(520, 170);
+                ctx.lineTo(410, 170);
+                ctx.lineTo(500, 230);
+                ctx.lineTo(460, 350);
+                ctx.lineTo(560, 260);
+                ctx.lineTo(660, 350);
+                ctx.lineTo(620, 230);
+                ctx.lineTo(710, 170);
+                ctx.lineTo(600, 170);
+                ctx.lineTo(560, 80);
+
+                ctx.stroke();
+
+            </script>
 
 
 
 
 
-            </div>
-        
+
+
+        </div>
+
     </main>
     <footer>
         <div class="feedback">
