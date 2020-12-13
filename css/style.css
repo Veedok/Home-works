@@ -78,7 +78,7 @@
   }
   100% {
     -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.35);
   }
 }
 /* Общие стили */
@@ -227,8 +227,6 @@ body {
   position: relative;
 }
 .account:hover .drop_cart {
-  -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: d-c-open 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 @keyframes d-c-open {
@@ -242,6 +240,7 @@ body {
   }
 }
 .drop_cart {
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.35);
   z-index: 1;
   transform: scaleY(0);
   padding: 15px;
@@ -1701,6 +1700,300 @@ input::-webkit-inner-spin-button {
 }
 .sub_form:hover {
   background-color: #d8d8d8;
+}
+.flex_checkout {
+  display: flex;
+  justify-content: space-between;
+}
+.flex_checkout h5 {
+  text-transform: uppercase;
+  color: #222222;
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.flex_checkout span {
+  color: #b3b2b2;
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.flex_checkout h6 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.checkout_margin_b {
+  margin-bottom: 90px;
+}
+.login_now {
+  flex-basis: 49%;
+  padding: 35px;
+}
+.login_now a {
+  margin-left: 32px;
+  color: #222222;
+  text-decoration: none;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.login_now a:hover {
+  text-decoration: underline;
+}
+span.red_star {
+  color: #ff0d0d;
+  font-family: Lato;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 400;
+}
+span.req_f {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  display: block;
+  color: #ff0d0d;
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.reg_mail_pass {
+  width: 390px;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+.reg_mail_pass_sub {
+  cursor: pointer;
+  width: 180px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.reg_mail_pass_sub:hover {
+  border: 1px solid #f16d7f;
+  color: #f16d7f;
+}
+.register {
+  flex-basis: 49%;
+  padding: 35px;
+}
+.register button {
+  cursor: pointer;
+  width: 180px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-top: 38px;
+}
+.register button:hover {
+  border: 1px solid #f16d7f;
+  color: #f16d7f;
+}
+.checkout_heding::-webkit-details-marker {
+  display: none;
+}
+.checkout_heding {
+  text-transform: uppercase;
+  color: #222222;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  padding: 35px 0;
+  border-bottom: 1px solid #e8e8e8;
+  outline: none;
+}
+.form_radio {
+  margin-bottom: 10px;
+}
+.radio_top {
+  margin-top: 30px;
+}
+.radio_b {
+  margin-bottom: 30px;
+}
+.d_a_one {
+  display: inline-block;
+  margin-top: 30px;
+}
+.form_radio input[type=radio] {
+  display: none;
+}
+.form_radio label {
+  text-transform: uppercase;
+  color: #222222;
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  line-height: 18px;
+  user-select: none;
+}
+.form_radio label::before {
+  content: "\f111";
+  font-family: FontAwesome;
+  display: inline-block;
+  width: 17px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+/* Checked */
+.form_radio input[type=radio]:checked + label::before {
+  content: "\f192";
+  font-family: FontAwesome;
+}
+/* Hover */
+.form_radio label:hover::before {
+  filter: brightness(120%);
+}
+/* Disabled */
+.form_radio input[type=radio]:disabled + label::before {
+  filter: grayscale(100%);
+}
+.duble_arrow i {
+  margin-right: 5px;
+}
+.card_details {
+  position: relative;
+  flex-basis: 49%;
+}
+.card_details h5 {
+  margin: 0;
+}
+.card_details .card_front {
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 10px #3d3d3d;
+  border: 1px solid black;
+  z-index: 1;
+  top: 60px;
+  left: 75px;
+  position: absolute;
+  padding: 10px;
+  width: 350px;
+  height: 230px;
+  background-color: #cdcdcc;
+}
+.card_number {
+  margin-bottom: 25px;
+  width: 330px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  outline: none;
+}
+.card_number:focus {
+  box-shadow: 0px 0px 15px 4px #4400ff;
+}
+.card_name {
+  width: 300px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  outline: none;
+}
+.card_name:focus {
+  box-shadow: 0px 0px 15px 4px #4400ff;
+}
+.card_month {
+  margin-bottom: 25px;
+  margin-right: 10px;
+  width: 50px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  outline: none;
+}
+.card_month:focus {
+  box-shadow: 0px 0px 15px 4px #4400ff;
+}
+.card_year {
+  margin-left: 10px;
+  width: 50px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  outline: none;
+}
+.card_year:focus {
+  box-shadow: 0px 0px 15px 4px #4400ff;
+}
+.card_back {
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 10px #3d3d3d;
+  border: 1px solid black;
+  top: 100px;
+  left: 170px;
+  position: absolute;
+  width: 350px;
+  height: 250px;
+  background-color: #cdcdcc;
+  padding-top: 40px;
+}
+.card_back .card_line {
+  background-color: #505050;
+  height: 45px;
+}
+.card_back .secret_cvccode {
+  float: right;
+  margin-right: 25px;
+  width: 50px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  outline: none;
+}
+.card_back .secret_cvccode:focus {
+  box-shadow: 0px 0px 15px 4px #4400ff;
+}
+h5.r_cvc {
+  margin-top: 30px;
+  text-align: end;
+  padding-right: 35px;
+}
+.card_out {
+  top: 330px;
+  left: 150px;
+  position: absolute;
+  cursor: pointer;
+  width: 325px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-top: 38px;
+}
+.card_out:hover {
+  border: 1px solid #f16d7f;
+  color: #f16d7f;
 }
 /*Cтили Footer*/
 /*Cтили feedback*/
