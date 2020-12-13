@@ -213,7 +213,7 @@
             </div>
         </details>
         <details class="container">
-            <summary class="checkout_heding">02.  BILLING INFORMATION</summary>
+            <summary class="checkout_heding">02. BILLING INFORMATION</summary>
             <div class="flex_checkout">
                 <div class="register">
                     <h5>Check as a guest or register</h5>
@@ -249,7 +249,8 @@
                     </form>
                 </div>
             </div>
-        </details><details class="container">
+        </details>
+        <details class="container">
             <summary class="checkout_heding">03. SHIPPING INFORMATION</summary>
             <div class="flex_checkout">
                 <div class="register">
@@ -326,9 +327,10 @@
             </div>
         </details>
         <details class="container">
-            <summary class="checkout_heding">05.  PAYMENT METHOD</summary>
+            <summary class="checkout_heding">05. PAYMENT METHOD</summary>
             <div class="flex_checkout">
-                <div class="register"> <h5>Check as a guest or register</h5>
+                <div class="register">
+                    <h5>Check as a guest or register</h5>
                     <span>Register with us for future convenience</span><br>
 
 
@@ -349,18 +351,20 @@
                     <button>Continue</button>
                 </div>
                 <div class="card_details">
-                <form action="#">
-                <div class="card_front">
-                   <h5>please enter your card number</h5>
-                    <input class="card_number" type="number" required min="12" max="12">
-                    <h5>valid until</h5>
-                    <input class="card_month" type="number" min="2" max="2" required>/<input class="card_year" type="number" min="2" max="2" required>
-                    <h5>Owner's name</h5>
-                    <input class="card_name" type="text">
-                </div>
-                <div class="card_back">
-                    <div class="card_line"></div><h5 class="r_cvc">CVC ?</h5> <input class="secret_cvccode" type="number" min="3" max="3" required>
-                </div><input class="card_out" type="submit" value="confirm"></form>
+                    <form action="#">
+                        <div class="card_front">
+                            <h5>please enter your card number</h5>
+                            <input class="card_number" type="number" required min="12" max="12">
+                            <h5>valid until</h5>
+                            <input class="card_month" type="number" min="2" max="2" required>/<input class="card_year" type="number" min="2" max="2" required>
+                            <h5>Owner's name</h5>
+                            <input class="card_name" type="text">
+                        </div>
+                        <div class="card_back">
+                            <div class="card_line"></div>
+                            <h5 class="r_cvc">CVC ?</h5> <input class="secret_cvccode" type="number" min="3" max="3" required>
+                        </div><input class="card_out" type="submit" value="confirm">
+                    </form>
                 </div>
             </div>
         </details>
@@ -402,57 +406,33 @@
                 </div>
             </div>
         </details>
-        <!--
- <details class="container">
-            <summary class="checkout_heding">01. Shipping Adress</summary>
-            <div class="flex_checkout">
-                <div class="register">
-                    <h5>Check as a guest or register</h5>
-                    <span>Register with us for future convenience</span><br>
+
+        
+        
+            <div class="canvas container">
+                <canvas  id="test_canvas" width="1140px" height="500px" margin="0"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita maxime alias nemo nobis cumque veniam quisquam voluptatum blanditiis ipsum distinctio, nesciunt non voluptas, itaque quod corporis odio, accusantium, deleniti quibusdam quam dolore error fugiat sint facilis quaerat. Quo minus, maxime quisquam aliquam nam, velit nobis similique quos, laboriosam deserunt nihil.</canvas>
+
+                <script>
+                    var canv = document.getElementById('test_canvas'),
+                        ctx = canv.getContext('2d');
+
+                    canv.addEventListener('mousemove', function(e) {
+                        ctx.beginPath();
+                        ctx.arc(e.clientX, e.clientY, 10, 0, Math.PI * 2);
+                        ctx.fill();
+                    });
+
+                </script>
 
 
-                    <div class="form_radio radio_top">
-                        <input id="radio-1" type="radio" name="radio" value="1">
-                        <label for="radio-1">checkout as guest</label>
-                    </div>
 
-                    <div class="form_radio radio_b">
-                        <input id="radio-2" type="radio" name="radio" value="2">
-                        <label for="radio-2">register</label>
-                    </div>
 
-                    <h5>register and save time!</h5>
-                    <span>Register with us for future convenience</span><br>
-                    <span class="duble_arrow d_a_one"><i class="fas fa-angle-double-right"></i>Fast and easy checkout</span><br>
-                    <span class="duble_arrow"><i class="fas fa-angle-double-right"></i>Easy access to your order history and status</span><br>
-                    <button>Continue</button>
-                </div>
-                <div class="login_now">
-                    <form action="#">
-                       <h5>Already registed?</h5><span>Please log in below</span>
-                       <h6>EMAIL ADDRESS<span class="red_star">*</span></h6>
-                        <input class="reg_mail_pass" type="email">
-                        <h6>PASSWORD<span class="red_star">*</span></h6>
-                        <input class="reg_mail_pass" type="password">
-                        
-                        <span class="req_f">* Required Fileds</span>
-                        <input class="reg_mail_pass_sub" type="submit" value="Log in"><a href="#">Forgot Password ?</a>
-                    </form>
-                </div>
+
+
+
             </div>
-        </details>
-
-
--->
-
-
+        
     </main>
-
-
-
-
-
-
     <footer>
         <div class="feedback">
             <div class="feedback_bkg">
