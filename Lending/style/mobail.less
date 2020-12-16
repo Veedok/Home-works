@@ -1,0 +1,186 @@
+// out: null
+.header {
+    background-image: url(../img/bg_mobail.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.logo_link > img {
+    margin-top: 27px;
+}
+
+.header_heding {
+    .text_stayle_mixin(32px, 38.4px, 900);
+    margin-top: 242px;
+}
+
+.header_heding_2 {
+    .text_stayle_mixin(24px, 28.8px, 600);
+}
+
+.send {
+    background: #008DCD;
+    border-radius: 30px;
+    width: 278px;
+    height: 48px;
+    .text_stayle_mixin(16px, 19.2px, 600);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    text-align: end;
+    padding-right: 20px;
+}
+
+.hamburger-menu {
+    position: relative;
+}
+
+#menu_toggle {
+    opacity: 0;
+}
+
+.menu_btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -35px;
+    left: 250px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu_btn > span,
+.menu_btn > span::before,
+.menu_btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transition-duration: .25s;
+}
+
+.menu_btn > span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu_btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu_box {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    top: -65px;
+    right: -20px;
+    transform: scaleY(0);
+    transform-origin: top;
+    width: 320px;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #ffffff;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+}
+
+.menu_item {
+    display: block;
+    padding: 12px 24px;
+    color: #000000;
+    .text_stayle_mixin(18px, 21.6px, 300);
+
+    text-decoration: none;
+    transition-duration: .25s;
+}
+
+.menu_item:hover {
+    background-color: #CFD8DC;
+}
+
+#menu_toggle:checked ~ .menu_btn > span {
+    transform: rotate(45deg);
+    background-color: black;
+}
+
+#menu_toggle:checked ~ .menu_btn > span::before {
+    top: 0;
+    transform: rotate(0);
+    background-color: black;
+}
+
+#menu_toggle:checked ~ .menu_btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    background-color: black;
+}
+
+#menu_toggle:checked ~ .menu_box {
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+.logo_b_menu {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+
+.call_back {
+    padding: 20px;
+}
+
+.burger_menu_q {
+    .text_stayle_mixin(18px, 21.6px, 600);
+}
+
+.back_call_i {
+    height: 40px;
+    border: 1px solid #363636;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 100%;
+    padding-left: 21px;
+    .text_stayle_mixin(14px, 16.8px, 300);
+}
+
+.back_call_bth {
+    margin: 10px 0;
+    color: #ffffff;
+    text-align: center;
+    background: #008DCD;
+    border-radius: 30px;
+    height: 40px;
+    width: 100%;
+    .text_stayle_mixin(16px, 19.2px, 600);
+}
+
+.back_call_bth:focus,
+.back_call_i:focus {
+    outline: none;
+}
+.iag {
+    color: #9E9E9E;
+    .text_stayle_mixin(10px, 12px, 300);
+}
+.social_icon {
+    font-size: 28px;
+    padding-top: 6px;
+    font-weight: 400;
+    border-radius: 50%;
+    background-color: #008DCD;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+.b_m_s {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
