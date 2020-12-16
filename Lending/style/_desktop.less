@@ -1,0 +1,53 @@
+// out: null
+@media (min-width: 1440px) {
+    
+
+ 
+    .header {
+        min-height: 525px;
+        background-image: url(../img/bg_desktop.jpg);
+    }
+
+    .wraper {
+        width: 1260px;
+    }
+
+    .only_mobail {
+        order: -1;
+    }
+
+  .header_heding {
+       .text_stayle_mixin(48px, 57px, 900);
+    }
+
+    .header_heding_2 {
+        flex-basis: 80%;
+        .text_stayle_mixin(36px, 43.2px, 600);
+    }
+
+    //Стили main 
+    .only_tablets {
+        display: none;
+    }
+.were_heding {
+    display: inline-block;
+    .text_stayle_mixin(36px, 43.2px, 600);
+}
+
+.were_text {    
+    .text_stayle_mixin(14px, 16.8px, 300);
+}
+.step{
+
+        h3 {
+            .text_stayle_mixin(30px, 36px, 400);
+        }
+        p {
+            .text_stayle_mixin(20px, 24px, 300);
+        }
+    }
+
+}
+
+
+

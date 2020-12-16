@@ -1,4 +1,5 @@
 // out: null
+
 .header {
     background-image: url(../img/bg_mobail.jpg);
     background-repeat: no-repeat;
@@ -189,12 +190,16 @@
 }
 
 //стили main
-.wraper {}
+.only_tablets {
+    display: none;
+}
 
-.were_the_best {}
-
-.were_img {}
-
+.w_t_b {
+    flex-basis: 50%;
+}
+.were_the_best {
+        margin-bottom: 7vh;
+}
 .were_heding {
     .text_stayle_mixin(18px, 21.6px, 600);
 }
@@ -203,4 +208,12 @@
     .text_stayle_mixin(12px, 14.4px, 300);
 }
 
-.were_btn {}
+.step {
+    h3 {
+        .text_stayle_mixin(26px, 31px, 400);
+    }
+
+    p {
+        .text_stayle_mixin(14px, 16.8px, 300);
+    }
+}

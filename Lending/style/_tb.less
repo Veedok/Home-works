@@ -1,6 +1,7 @@
 // out: null
 
 @media (min-width: 768px) {
+    
     .header {
         min-height: 415px;
         background-image: url(../img/bg_tablets.jpg);
@@ -26,7 +27,6 @@
     }
 
     .menu_box {
-        justify-content: space-between;
         display: flex;
         justify-content: space-between;
         visibility: visible;
@@ -66,7 +66,7 @@
     .header_heding {
         margin-top: 55px;
         color: #ffffff;
-        width: 350px;
+        flex-basis: 74%;
     }
 
     .header_heding_2 {
@@ -77,35 +77,53 @@
     .send {
         margin-top: 25px;
     }
-    //Стили main 
-.wraper {}
 
-.were_the_best {
-    display: flex;
+    .were_the_best {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .were_img {
+        flex-basis: 50%;
+        order: 1;
+
+    }
+
+    .only_tablets {
+        display: block;
+        margin-bottom: 0;
+        .text_stayle_mixin(36px, 43.2px, 600);
+    }
+
+    .were_heding {
+        display: none;
+
+    }
+    .w_t_b {
+        flex-basis: 50%;
+    }
+    .were_text {
+        
+        flex-basis: 50%;
+        .text_stayle_mixin(14px, 16.8px, 300);
+
+    }
+    .steps{
+        display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    .step{
+        flex-basis: 45%;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+        h3 {
+            .text_stayle_mixin(26px, 31px, 400);
+        }
+        p {
+            .text_stayle_mixin(16px, 19px, 300);
+        }
+    }
+ 
 }
-
-.were_img {
-    order: 3;
-        margin-left: 65px;
-}
-
-.were_heding {
-    margin-bottom: 0;
-    .text_stayle_mixin(36px, 43.2px, 600);
-}
-
-.were_text {
-    order: 2;
-    flex-basis: 50%;
-    .text_stayle_mixin(14px, 16.8px, 300);
-
-}
-
-.were_btn {
-    margin-top: -30px;
-    order: 4;
-}
-}
-
-
