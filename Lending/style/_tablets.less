@@ -1,0 +1,111 @@
+// out: null
+
+@media (min-width: 768px) {
+    .header {
+        min-height: 415px;
+        background-image: url(../img/bg_tablets.jpg);
+    }
+
+    .wraper {
+        width: 700px;
+    }
+
+    .menu_btn,
+    .only_mobail {
+        visibility: hidden;
+        display: none;
+    }
+
+    .call_back,
+    .b_m_s {
+        display: none;
+    }
+
+    .hamburger-menu {
+        flex-basis: 80%;
+    }
+
+    .menu_box {
+        justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
+        visibility: visible;
+        transform: scale(1);
+        position: static;
+        width: 100%;
+        transition-duration: 0;
+        box-shadow: 0px 0px 0px;
+        background-color: rgba(255, 255, 255, 0);
+        padding: 0;
+        margin: 0;
+
+        & li {
+            display: inline;
+        }
+
+        & a {
+            padding: 0;
+            display: inline-block;
+            color: #ffffff;
+            .text_stayle_mixin(14px, 16.8px, 300);
+            flex-basis: 13%;
+
+            &:hover {
+                text-decoration: underline;
+                background-color: rgba(255, 255, 255, 0);
+            }
+        }
+    }
+
+    .t_flex_w {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .header_heding {
+        margin-top: 55px;
+        color: #ffffff;
+        width: 350px;
+    }
+
+    .header_heding_2 {
+        flex-basis: 70%;
+        color: #ffffff;
+    }
+
+    .send {
+        margin-top: 25px;
+    }
+    //Стили main 
+.wraper {}
+
+.were_the_best {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.were_img {
+    order: 3;
+        margin-left: 65px;
+}
+
+.were_heding {
+    margin-bottom: 0;
+    .text_stayle_mixin(36px, 43.2px, 600);
+}
+
+.were_text {
+    order: 2;
+    flex-basis: 50%;
+    .text_stayle_mixin(14px, 16.8px, 300);
+
+}
+
+.were_btn {
+    margin-top: -30px;
+    order: 4;
+}
+}
+
+
