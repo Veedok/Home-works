@@ -1,7 +1,7 @@
 // out: null
 
 @media (min-width: 768px) {
-    
+
     .header {
         min-height: 415px;
         background-image: url(../img/bg_tablets.jpg);
@@ -99,31 +99,128 @@
         display: none;
 
     }
+
     .w_t_b {
-        flex-basis: 50%;
+        flex-basis: 47%;
     }
+
     .were_text {
-        
+
         flex-basis: 50%;
         .text_stayle_mixin(14px, 16.8px, 300);
 
     }
-    .steps{
+
+    .steps {
         display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
-    .step{
+
+    .step {
         flex-basis: 45%;
         display: flex;
-    flex-direction: column;
-    align-items: center;
+        flex-direction: column;
+        align-items: center;
+
         h3 {
             .text_stayle_mixin(26px, 31px, 400);
         }
+
         p {
             .text_stayle_mixin(16px, 19px, 300);
         }
     }
- 
+    .flex_c_b {
+        flex-direction: row;
+    }
+    .call_back_2 {
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            flex-basis: 50%;
+            .text_stayle_mixin(28px, 33px, 600);
+        }
+    }
+
+    .b_l_flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .b_l_text {
+        flex-basis: 40%;
+
+        h2 {
+            margin-top: 0;
+        }
+    }
+
+    .b_l_btn {
+        flex-basis: 40%;
+    }
+
+    .slider_feedback {
+        justify-content: space-between;
+    }
+
+    .d_2 {
+        position: static;
+        visibility: visible;
+    }
+
+    .feedback {
+        flex-basis: 40%;
+    }
+
+    .advantages {
+        h2 {
+            .text_stayle_mixin(36px, 43px, 600);
+        }
+
+        .advantages_item {
+            flex-basis: 15%;
+
+            div {
+                width: 100px;
+                height: 100px;
+
+                img {
+                    width: 45px;
+                }
+            }
+        }
+    }
+
+    .adva_text {
+        .text_stayle_mixin(12px, 14px, 300);
+    }
+    .guarantees {
+        justify-content: space-between;
+    }
+    .oper {
+        position: static;
+        visibility: visible;
+    }
+    .only_mob_btn {
+        position: absolute;
+        visibility: hidden;
+    }
+    .g_blok_head {
+        float: none;
+        
+    }
+    .guarant_blok {
+        flex-basis: 31%;
+        h3 {
+            .text_stayle_mixin(20px, 24px, 300);
+        }
+        p {
+            min-height: 90px;
+        }
+    }
+    .doubts_heding {
+    min-height: 20px;
+}
 }

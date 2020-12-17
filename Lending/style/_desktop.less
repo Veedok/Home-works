@@ -1,8 +1,8 @@
 // out: null
 @media (min-width: 1440px) {
-    
 
- 
+
+
     .header {
         min-height: 525px;
         background-image: url(../img/bg_desktop.jpg);
@@ -16,8 +16,8 @@
         order: -1;
     }
 
-  .header_heding {
-       .text_stayle_mixin(48px, 57px, 900);
+    .header_heding {
+        .text_stayle_mixin(48px, 57px, 900);
     }
 
     .header_heding_2 {
@@ -29,25 +29,114 @@
     .only_tablets {
         display: none;
     }
-.were_heding {
-    display: inline-block;
-    .text_stayle_mixin(36px, 43.2px, 600);
-}
 
-.were_text {    
-    .text_stayle_mixin(14px, 16.8px, 300);
-}
-.step{
+    .were_heding {
+        display: inline-block;
+        .text_stayle_mixin(36px, 43.2px, 600);
+    }
+
+    .were_text {
+        .text_stayle_mixin(14px, 16.8px, 300);
+    }
+
+    .step {
 
         h3 {
             .text_stayle_mixin(30px, 36px, 400);
         }
+
         p {
             .text_stayle_mixin(20px, 24px, 300);
         }
     }
 
+    .w_t_b {
+        flex-basis: 40%;
+    }
+
+    .were_the_best {
+        justify-content: space-between;
+    }
+
+    .call_back_2 {
+
+        h2 {
+            flex-basis: 60%;
+            .text_stayle_mixin(36px, 43px, 600);
+        }
+    }
+
+    .b_l_btn {
+        flex-basis: 22%;
+    }
+
+    .b_l_text {
+        flex-basis: 70%;
+
+        h2 {
+            .text_stayle_mixin(48px, 57px, 600);
+        }
+
+        p {
+            .text_stayle_mixin(24px, 23px, 300);
+        }
+    }
+
+    .feedback {
+        flex-basis: 30%;
+    }
+
+
+    .advantages {
+        .advantages_item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            div {
+                width: 160px;
+                height: 160px;
+
+                img {
+                    width: 65px;
+                }
+            }
+        }
+    }
+
+    .adva_text {
+        .text_stayle_mixin(18px, 21px, 300);
+    }
+
+    .g_blok_head {
+        width: 160px;
+        height: 160px;
+
+        img {
+            width: 75px;
+        }
+    }
+    .guarant_blok {
+    p {
+        .text_stayle_mixin(16px, 19px, 300);
+    }
+    h3 {
+        .text_stayle_mixin(30px, 36px, 400);
+    } 
+         .details {
+        text-align: center;
+        
+    }
 }
-
-
-
+    .doubts_flex {
+            flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    }
+    .doubts_item   {
+        flex-basis: 48%;
+    }
+        .doubts_heding {
+    min-height: 75px;
+}
+}

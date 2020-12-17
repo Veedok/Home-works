@@ -1731,6 +1731,7 @@ input::-webkit-inner-spin-button {
 .login_now {
   flex-basis: 49%;
   padding: 35px;
+  height: 500px;
 }
 .login_now a {
   margin-left: 32px;
