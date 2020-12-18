@@ -1763,6 +1763,7 @@ span.req_f {
   font-weight: 400;
 }
 .reg_mail_pass {
+  padding: 5px 20px;
   width: 390px;
   height: 45px;
   background-color: #ffffff;
