@@ -162,6 +162,7 @@
 }
 
 .range-controls {
+    z-index: -1;
     position: relative;
     height: 41px;
     margin-bottom: 15px;
@@ -172,6 +173,7 @@
 }
 
 .range-controls .scale {
+    z-index: 1;
     height: 5px;
     background: #f0f0f0;
 }
@@ -185,6 +187,7 @@
 }
 
 .range-controls .toggle {
+    z-index: 1;
     position: absolute;
     top: 15.5px;
     left: 0;
@@ -264,14 +267,20 @@
     transition-duration: 0.2s;
     box-shadow: -5px 5px 15px #bebebe;
 }
+.catalog_card:hover .item_mask {
+    opacity: 0.8;
+}
 
 .catalog_card {
-    flex-basis: 31%;
+    position: relative;
     background-color: #ffffff;
     width: 263px;
     height: 364px;
     margin-bottom: 38px;
 
+}
+.item_mask_product {
+    top: 0px;
 }
 
 /*Стили для селектора страниц*/
