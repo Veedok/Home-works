@@ -223,4 +223,78 @@
     .doubts_heding {
     min-height: 20px;
 }
+    .flex_part {
+        flex-basis: 90%;
+    }
+.flex_part img:last-child, .flex_part img:nth-child(7) {
+    display: inline-block;
+}
+    .menu_footer {
+        display: flex;
+        justify-content: space-between;
+    }
+     .hamburger-menu_footer {
+         margin-left: 20px;
+        flex-basis: 80%;
+         padding-top: 10px;
+    }
+
+    .menu_box_footer {
+        display: flex;
+        justify-content: space-between;
+        visibility: visible;
+        transform: scale(1);
+        position: static;
+        width: 100%;
+        transition-duration: 0;
+        box-shadow: 0px 0px 0px;
+        background-color: rgba(255, 255, 255, 0);
+        padding: 0;
+        margin: 0;
+
+        & li {
+            display: inline;
+        }
+
+        & a {
+            padding: 0;
+            display: inline-block;
+            color: #000000;
+            .text_stayle_mixin(14px, 16.8px, 300);
+            flex-basis: 13%;
+
+            &:hover {
+                text-decoration: underline;
+                background-color: rgba(255, 255, 255, 0);
+            }
+        }
+    }
+    .menu_btn_footer, #menu_toggle_footer {
+        display: none;
+    }
+    .call_back_footer {
+        display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+        .burger_menu_q {
+            flex-basis: 33%;
+        }
+        .back_call_i_footer {
+            flex-basis: 32%;
+        }
+        .back_call_bth_footer {
+            margin: 0;
+            flex-basis: 32%;
+        }
+    }
+    .iag {
+        margin-left: -420px;
+    align-self: center;
+    }
+    #i_ager_f {
+        margin-left: 10px;
+    }
+    .b_m_s_f {
+        display: inline-block;
+    }
 }
