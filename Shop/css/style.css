@@ -102,6 +102,13 @@ body {
   opacity: 0;
   visibility: hidden;
 }
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
 /* Стили Header*/
 .header {
   background-color: #fff;
@@ -1999,6 +2006,11 @@ h5.r_cvc {
 }
 #test_canvas {
   border: 1px solid black;
+}
+@media (max-width: 768px) {
+  .header {
+    display: none;
+  }
 }
 /*Cтили Footer*/
 /*Cтили feedback*/
