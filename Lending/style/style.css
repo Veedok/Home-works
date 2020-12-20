@@ -24,6 +24,32 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+.blur {
+  filter: blur(5px);
+  height: 100%;
+  width: 100%;
+}
+.obolochka {
+  display: none;
+  background: rgba(0, 0, 0, 0.68);
+  z-index: 2;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.dialog {
+  position: absolute;
+  z-index: 3;
+  overflow: auto;
+  width: 440px;
+  height: 336px;
+  background-color: aqua;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .header {
   background-image: url(../img/bg_mobail.jpg);
   background-repeat: no-repeat;
@@ -965,7 +991,7 @@ footer {
     margin: 0;
     flex-basis: 32%;
   }
-  .iag {
+  .iag_f {
     margin-left: -420px;
     align-self: center;
   }
@@ -986,6 +1012,10 @@ footer {
   }
   .only_mobail {
     order: -1;
+  }
+  .send:hover {
+    box-shadow: 0px 0px 15px 0px #008DCD;
+    cursor: pointer;
   }
   .header_heding {
     font-family: Prompt;
@@ -1116,7 +1146,7 @@ footer {
   .doubts_heding {
     min-height: 75px;
   }
-  .iag {
+  .iag_f {
     margin-right: 285px;
   }
   #i_ager_f {
