@@ -12,13 +12,35 @@
 </head>
 
 <body>
-   <script>function viewDiv(){
-  document.getElementById("div1").style.display = "block";
-         document.getElementById('123').className +="blur";
-  
-};</script>
+    <script>
+        function viewDiv() {
+            document.getElementById("div1").style.display = "block";
+            document.getElementById('123').className += "blur";
+
+        };
+
+        function closePopUp() {
+            var classRemote = document.getElementById('123');
+            document.getElementById("div1").style.display = "none";
+            classRemote.classList.remove("blur");
+        };
+        document.addEventListener("click", function(e) {
+            if (e.target.className == "obolochka") {
+                closePopUp();
+            }
+        });
+
+    </script>
     <div id="div1" class="obolochka">
-        <div class="dialog"></div>
+        <div class="pop_up">
+            <button class="cross_pop_up" value="Click" onclick="closePopUp()"><i class="fas fa-times cross_ikon"></i></button>
+            <h3 class="pop_up_heading">Оставьте заявку, и мы Вам перезвоним!</h3>
+            <form class="form_pop_up" action="#">
+                <input class="pop_up_name" type="text" required placeholder="Ваше имя">
+                <input class="pop_up_phone" type="number" required placeholder="Ваш телефон">
+                <input class="pop_up_btn" type="submit" value="Заказать звонок">
+            </form>
+        </div>
     </div>
     <div id="123">
         <header class="header">
@@ -97,7 +119,7 @@
             </div>
             <div class="call_back_2">
                 <div class="wraper flex_c_b">
-                    <h2>Мы берём все заботы по доставке на себя!</h2><button  class="send" value="Click" onclick="viewDiv()">отправить посылку</button>
+                    <h2>Мы берём все заботы по доставке на себя!</h2><button class="send" value="Click" onclick="viewDiv()">отправить посылку</button>
                 </div>
             </div>
             <div class="blue_line">
@@ -116,7 +138,7 @@
             <div class="wraper">
                 <h2 class="slider_heading">ОТЗЫВЫ</h2>
                 <div class="slider_feedback">
-                    <button class="btn_feed"> <i class="fas fa-chevron-left"></i></button>
+                    <button class="btn_feed how"> <i class="fas fa-chevron-left"></i></button>
                     <div class="feedback"><img src="img/image.jpg" alt="photo">
                         <h3 class="f_name">Дарья</h3>
                         <h3 class="f_work">La Intuicion</h3>
@@ -130,7 +152,7 @@
                         <p class="f_info">Посылка: товары<br>Откуда: Москва<br>Куда: Калининград</p>
                         <p class="feedback_text">Мне нравится работать с SendIt, потому что это удобно: моментальный расчет стоимости доставки, удобный сайт, выборка среди основных надёжных логистических компаний и самый значимый фактор – всё это можно оперативно организовать и не волноваться. И ещё хочу сказать отдельное спасибо менеджеру за отзывчивость.</p>
                     </div>
-                    <button class="btn_feed"> <i class="fas fa-chevron-right"></i></button>
+                    <button class="btn_feed how"> <i class="fas fa-chevron-right"></i></button>
                 </div>
             </div>
             <div class="advantages">
@@ -190,7 +212,7 @@
                         <p>Мы работаем с самыми надежными и известными операторами доставки. Проверка надежности курьерской компании, экспертная оценка качества предоставляемых услуг</p><button class="details">подробнее</button>
                     </div>
 
-                    <button class="btn_feed only_mob_btn"> <i class="fas fa-chevron-right"></i></button>
+                    <button class="btn_feed only_mob_btn how"> <i class="fas fa-chevron-right"></i></button>
                 </div>
             </div>
             <div class="doubts">

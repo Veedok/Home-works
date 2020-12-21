@@ -15,10 +15,12 @@
     .only_mobail {
         order: -1;
     }
+
     .send:hover {
         box-shadow: 0px 0px 15px 0px @main-blue;
         cursor: pointer;
     }
+
     .header_heding {
         .text_stayle_mixin(48px, 57px, 900);
     }
@@ -72,7 +74,7 @@
     .b_l_btn {
         flex-basis: 22%;
     }
-
+   
     .b_l_text {
         flex-basis: 70%;
 
@@ -119,39 +121,66 @@
             width: 75px;
         }
     }
+
     .guarant_blok {
-    p {
-        .text_stayle_mixin(16px, 19px, 300);
+        p {
+            .text_stayle_mixin(16px, 19px, 300);
+        }
+
+        h3 {
+            .text_stayle_mixin(30px, 36px, 400);
+        }
+
+        .details {
+            text-align: center;
+
+        }
     }
-    h3 {
-        .text_stayle_mixin(30px, 36px, 400);
-    } 
-         .details {
-        text-align: center;
-        
-    }
-}
+
     .call_back_footer {
         align-items: center;
     }
+
     .doubts_flex {
-            flex-wrap: wrap;
-    display: flex;
-    justify-content: space-between;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
     }
-    .doubts_item   {
+
+    .doubts_item {
         flex-basis: 48%;
     }
-        .doubts_heding {
-    min-height: 75px;
-}
-      .iag_f {
+
+    .doubts_heding {
+        min-height: 75px;
+    }
+
+    .iag_f {
         margin-right: 285px;
     }
+
     #i_ager_f {
         margin-left: 280px;
     }
-    .burger_menu_q{
+
+    .burger_menu_q {
         .text_stayle_mixin(30px, 36px, 600);
+    }
+
+    .form_pop_up {
+        min-width: 440px;
+    }
+     .details:hover {
+        box-shadow: 0px 0px 15px 0px @main-blue;
+    }
+    .b_l_yellow_btn:hover {
+        box-shadow: 0px 0px 15px 0px #FFCC00;
+        cursor: pointer;
+    }
+    .how:hover svg {
+        color: @main-blue;
+    }
+    .doubts_item:hover {
+        cursor: pointer;
     }
 }
