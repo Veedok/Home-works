@@ -12,10 +12,13 @@
 
 .header_heding {
     .text_stayle_mixin(32px, 38.4px, 900);
-    margin-top: 242px;
+    margin-top: 205px;
+    margin-bottom: 0;
 }
 
 .header_heding_2 {
+    margin-bottom: 23px;
+    margin-top: 10px;
     .text_stayle_mixin(24px, 28.8px, 600);
 }
 
@@ -137,6 +140,7 @@
 }
 
 .burger_menu_q {
+    margin: 10px 0;
     .text_stayle_mixin(18px, 21.6px, 600);
 }
 
@@ -199,6 +203,7 @@
 }
 
 .were_img {
+    margin-top: 43px;
     width: 280px;
 }
 
@@ -208,7 +213,7 @@
 
 .were_the_best {
 
-    margin-bottom: 7vh;
+    margin-bottom: 44px;
 }
 
 .were_heding {
@@ -216,26 +221,56 @@
 }
 
 .were_text {
+    margin-bottom: 20px;
     .text_stayle_mixin(12px, 14.4px, 300);
 }
 
 .step {
+    min-height: 280px;
+    margin-bottom: 20px;
+
     h3 {
+        margin: 10px 0 7px;
         align-self: flex-start;
         .text_stayle_mixin(26px, 31px, 400);
     }
 
     p {
+        margin: 0;
         align-self: flex-start;
         .text_stayle_mixin(14px, 16.8px, 300);
+    }
+
+    &:nth-child(2) {
+        margin-bottom: 34px;
+    }
+
+    &:nth-child(2) h3 {
+        margin: 12px 0 5px;
+    }
+
+    &:nth-child(3) {
+        margin-bottom: 23px;
+    }
+
+    &:nth-child(3) h3 {
+        margin: 6px 0 4px;
+    }
+
+    &:nth-child(4) h3 {
+        margin: 14px 0 4px;
+    }
+
+    &:nth-child(4) {
+        margin-bottom: 0;
     }
 }
 
 .call_back_2 {
     background: #F7F7F7;
-    padding: 23px 0;
 
     h2 {
+        margin: 25px 0 15px;
         .text_stayle_mixin(24px, 28px, 600);
     }
 }
@@ -244,18 +279,22 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+
+    button {
+        margin-bottom: 23px;
+    }
 }
 
 .blue_line {
+    min-height: 283px;
     background-color: @main-blue;
-    padding-top: 32px;
+    padding-top: 25px;
 
     .b_l_phone {
+        margin-top: 4px;
         cursor: pointer;
-        outline: none;
-        border: none;
         background: @main-blue;
-        height: 40px;
+        height: 47px;
         border: 1px solid #ffffff;
         box-sizing: border-box;
         border-radius: 30px;
@@ -269,21 +308,24 @@
     }
 
     .b_l_yellow_btn {
+
         cursor: pointer;
         outline: none;
         border: none;
         padding-right: 35px;
-        margin: 10px 0;
+        margin: 9px 0;
         color: #363636;
         text-align: end;
         background: #FFCC00;
         border-radius: 30px;
-        height: 40px;
+        height: 48px;
         width: 100%;
-        .text_stayle_mixin(18px, 19.2px, 600);
+        .text_stayle_mixin(20px, 19.2px, 600);
+        margin-bottom: 0;
     }
 
     #b_l_i_ager {
+        margin-left: 7px;
         .text_stayle_mixin(10px, 12px, 300);
     }
 
@@ -295,21 +337,26 @@
 .b_l_text {
 
     h2 {
+        margin: 0;
         color: #ffffff;
-        .text_stayle_mixin(28px, 33px, 600);
+        .text_stayle_mixin(33px, 33px, 600);
     }
 
     p {
+        margin-top: 18px;
         color: #ffffff;
         .text_stayle_mixin(14px, 13px, 300);
     }
 }
 
 .slider_heading {
+    margin: 12px 0 7px;
     .text_stayle_mixin(28px, 33px, 600);
 }
 
 .btn_feed {
+    margin-bottom: 7px;
+    padding: 0;
     height: 25px;
     background-color: #ffffff;
     border: none;
@@ -320,14 +367,16 @@
 }
 
 .slider_feedback {
+    margin-bottom: 15px;
     display: flex;
     align-items: center;
 
-    .feedback {}
+    .feedback {
+        margin-left: 10px;
+    }
 
     img {
-        margin-right: 20px;
-        margin-bottom: 15px;
+        margin: 7px 20px 0 0;
         float: left;
     }
 
@@ -337,19 +386,21 @@
     }
 
     .f_work {
-        margin: 0;
-        .text_stayle_mixin(18px, 21px, 400);
+        margin: 4px 0;
+        .text_stayle_mixin(16px, 21px, 400);
     }
 
     .f_info {
         margin: 0;
-        .text_stayle_mixin(10px, 12px, 300);
+        margin-bottom: 4px;
+        .text_stayle_mixin(10px, 17px, 300);
     }
 
     br {}
 
     .feedback_text {
-        .text_stayle_mixin(12px, 14px, 300);
+        margin-top: 3px;
+        .text_stayle_mixin(13px, 14px, 300);
         display: inline-block;
     }
 }
@@ -363,6 +414,7 @@
     background-color: #F7F7F7;
 
     h2 {
+        margin: 0 0 0 -3px;
         .text_stayle_mixin(28px, 33px, 600);
     }
 
@@ -374,6 +426,8 @@
 
     .advantages_item {
         flex-basis: 30%;
+        margin-top: 20px;
+        padding-right: 5px;
 
         div {
             border-radius: 50%;
@@ -383,13 +437,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
-            img {
-                width: 40px;
-            }
         }
     }
+
+    .ada_item_item6,
+    .ada_item_item4,
+    .ada_item_item5 {
+        margin-top: 12px;
+    }
+
 }
+
 
 .adva_text {
     padding: 0 2px;
@@ -399,7 +457,7 @@
 }
 
 .ada_pading {
-    padding: 20px 0;
+    padding: 18px 0;
 }
 
 .guarantees {
@@ -407,9 +465,16 @@
     align-items: center;
 }
 
+.guarantees_heading {
+    margin-bottom: 18px;
+    margin-top: 15px;
+    .text_stayle_mixin(28px, 34px, 600);
+}
+
 .g_blok_head {
+    padding-left: 6px;
     float: left;
-    margin-right: 10px;
+    margin-right: 11px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -418,23 +483,30 @@
     height: 62px;
     background-color: #F7F7F7;
 
-
-
     img {
         width: 26px;
     }
 
 }
 
+.only_mob_btn {
+    align-self: baseline;
+    margin-top: 18px;
+}
+
 .guarant_blok {
-    padding: 0 5px;
+    padding: 0 7px;
 
     p {
+        margin-top: 27px;
+        padding-left: 5px;
+        margin-bottom: 18px;
         .text_stayle_mixin(12px, 14px, 300);
     }
 
     h3 {
-        .text_stayle_mixin(16px, 19px, 400);
+        margin-top: 10px;
+        .text_stayle_mixin(17px, 19px, 400);
     }
 
     .details {
@@ -459,10 +531,11 @@
 
 .doubts {
     margin-top: 20px;
-    padding: 20px 0;
+    padding: 20px 0 18px;
     background-color: #D2ECF7;
 
     h1 {
+        margin-top: 0;
         .text_stayle_mixin(28px, 33px, 600);
     }
 
@@ -471,15 +544,15 @@
 
 .doubts_item {
 
-    margin: 5px 0;
+    margin: 9px 0;
     .text_stayle_mixin(14px, 17px, 300);
     background: #FFFFFF;
     border-radius: 32px;
 }
 
 .doubts_heding {
-    min-height: 90px;
-    padding: 20px;
+    min-height: 80px;
+    padding: 15px 25px 15px 25px;
     outline: none;
     border: none;
     display: flex;
@@ -495,14 +568,14 @@
 }
 
 .doubts_item[open] .doubts_heding::after {
-    content: "\f107";
+    content: "\f106";
     font-family: FontAwesome;
     margin-right: 6px;
     color: #008DCD;
 }
 
 .doubts_heding::after {
-    content: "\f106";
+    content: "\f107";
     font-family: FontAwesome;
     margin-right: 6px;
     color: #008DCD;
@@ -513,7 +586,7 @@
 }
 
 .f_par {
-    padding: 15px 0;
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -535,7 +608,7 @@
 .svg-inline--fa.fa-w-14,
 .svg-inline--fa.fa-w-10,
 .svg-inline--fa.fa-w-18 {
-    width: 40px !important;
+    width: 15px !important;
 }
 
 footer {
@@ -559,8 +632,8 @@ footer {
     display: flex;
     align-items: center;
     position: absolute;
-    top: -45px;
-    left: 240px;
+    top: -39px;
+    left: 245px;
     width: 35px;
     height: 26px;
     cursor: pointer;
@@ -580,12 +653,12 @@ footer {
 
 .menu_btn_footer > span::before {
     content: '';
-    top: -10px;
+    top: -15px;
 }
 
 .menu_btn_footer > span::after {
     content: '';
-    top: 10px;
+    top: 15px;
 }
 
 .menu_box_footer {
@@ -643,7 +716,7 @@ footer {
 
 
 .call_back_footer {
-    padding: 20px;
+    padding: 9px 0;
     border-bottom: 1px solid #C4C4C4;
 }
 
@@ -664,7 +737,7 @@ footer {
 }
 
 .back_call_bth_footer {
-    margin: 10px 0;
+    margin: 10px 0 5px;
     color: #ffffff;
     text-align: center;
     background: #008DCD;
@@ -692,3 +765,6 @@ footer {
     .text_stayle_mixin(10px, 12px, 300);
 }
 
+.logo_f {
+    width: 129px;
+}
