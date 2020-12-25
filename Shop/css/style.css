@@ -102,6 +102,13 @@ body {
   opacity: 0;
   visibility: hidden;
 }
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
 /* Стили Header*/
 .header {
   background-color: #fff;
@@ -1731,6 +1738,7 @@ input::-webkit-inner-spin-button {
 .login_now {
   flex-basis: 49%;
   padding: 35px;
+  height: 500px;
 }
 .login_now a {
   margin-left: 32px;
@@ -1762,6 +1770,7 @@ span.req_f {
   font-weight: 400;
 }
 .reg_mail_pass {
+  padding: 5px 20px;
   width: 390px;
   height: 45px;
   background-color: #ffffff;
@@ -1997,6 +2006,11 @@ h5.r_cvc {
 }
 #test_canvas {
   border: 1px solid black;
+}
+@media (max-width: 768px) {
+  .header {
+    display: none;
+  }
 }
 /*Cтили Footer*/
 /*Cтили feedback*/
