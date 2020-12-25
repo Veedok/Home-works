@@ -1,0 +1,102 @@
+// out: null
+.blur {
+    filter: blur(5px);
+    height: 100%;
+    width: 100%;
+}
+
+.obolochka {
+    display: none;
+    background: rgba(0, 0, 0, 0.68);
+    z-index: 2;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.pop_up {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 32px;
+    position: absolute;
+    z-index: 3;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cross_pop_up {
+    cursor: pointer;
+        background-color: #ffffff;
+    border: none;
+    color: @main-blue;
+    align-self: flex-end;
+    margin-bottom: 30px;
+}
+
+.pop_up_heading {
+    margin-bottom: 30px;
+    .text_stayle_mixin(20px, 24px, 600);
+}
+
+.form_pop_up {
+    margin: 0 30px;
+    min-width: 280px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+
+    .pop_up_name {
+        width: 100%;
+        margin: 5px 0;
+        border: 1px solid #008DCD;
+        box-sizing: border-box;
+        border-radius: 30px;
+        padding: 20px;
+
+        &::placeholder {
+            .text_stayle_mixin(16px, 19px, 300);
+            color: @main-blue;
+        }
+         &:focus {
+            outline: none;
+        }
+    }
+
+    .pop_up_phone {
+        width: 100%;
+        margin: 5px 0;
+        border: 1px solid #008DCD;
+        box-sizing: border-box;
+        border-radius: 30px;
+        padding: 20px;
+
+        &::placeholder {
+            .text_stayle_mixin(16px, 19px, 300);
+            color: @main-blue;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .pop_up_btn {
+        border: none;
+        outline: none;
+        width: 100%;
+        margin: 5px 0 45px;
+        cursor: pointer;
+        box-sizing: border-box;
+        border-radius: 30px;
+        padding: 20px;
+        background-color: @main-blue;
+        color: #ffffff;
+        .text_stayle_mixin(25px, 19px, 600);
+    }
+}
