@@ -150,7 +150,7 @@ input[type="number"]:focus {
 .browse-btn button {
   font-family: Lato;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 19px;
   font-weight: 300;
   letter-spacing: 0.025em;
   color: #222222;
@@ -2227,9 +2227,6 @@ h5.r_cvc {
   .header-container {
     flex-wrap: wrap;
     justify-content: center;
-  }
-  .browse-btn button {
-    line-height: 19px;
   }
   .header-logo {
     margin-bottom: 20px;
