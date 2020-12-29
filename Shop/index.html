@@ -59,7 +59,7 @@
 
             <div class="login">
                 <a href="#"><img src="img/cart.png" alt=""></a>
-                <div class="account"><button>My Account <i class="fas fa-caret-down"></i></button>
+                <div class="account"><button class="my_acc">My Account <i class="fas fa-caret-down"></i></button>
                     <div class="drop_cart">
                         <div class="drop_cart_one_product"><img src="img/hhd/rectangle_24_1821.jpg" alt="#">
                             <div>
@@ -105,8 +105,12 @@
 
     </header>
     <div class="container">
-        <nav>
-            <ul>
+        <nav class="burger">
+           <input id="menu_toggle" type="checkbox" />
+                    <label class="menu_btn" for="menu_toggle">
+                        <span></span>
+                    </label>
+            <ul class="menu_box">
                 <li><a class="menu" href="index.html">home</a></li>
                 <li><a class="menu" href="product.html">man</a></li>
                 <li><a class="menu" href="single-page.html">woman</a></li>

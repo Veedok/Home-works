@@ -37,9 +37,12 @@ input::-webkit-inner-spin-button {
   font-size: 32px;
   line-height: 38.4px;
   font-weight: 900;
-  margin-top: 242px;
+  margin-top: 205px;
+  margin-bottom: 0;
 }
 .header_heding_2 {
+  margin-bottom: 23px;
+  margin-top: 10px;
   font-family: Prompt;
   font-size: 24px;
   line-height: 28.8px;
@@ -48,7 +51,7 @@ input::-webkit-inner-spin-button {
 .send {
   background: #008DCD;
   border-radius: 30px;
-  width: 278px;
+  width: 280px;
   height: 48px;
   font-family: Prompt;
   font-size: 16px;
@@ -152,6 +155,7 @@ input::-webkit-inner-spin-button {
   padding: 20px;
 }
 .burger_menu_q {
+  margin: 10px 0;
   font-family: Prompt;
   font-size: 18px;
   line-height: 21.6px;
@@ -216,13 +220,14 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 .were_img {
+  margin-top: 43px;
   width: 280px;
 }
 .w_t_b {
   flex-basis: 50%;
 }
 .were_the_best {
-  margin-bottom: 7vh;
+  margin-bottom: 44px;
 }
 .were_heding {
   font-family: Prompt;
@@ -231,12 +236,18 @@ input::-webkit-inner-spin-button {
   font-weight: 600;
 }
 .were_text {
+  margin-bottom: 6px;
   font-family: Prompt;
   font-size: 12px;
   line-height: 14.4px;
   font-weight: 300;
 }
+.step {
+  min-height: 280px;
+  margin-bottom: 20px;
+}
 .step h3 {
+  margin: 10px 0 7px;
   align-self: flex-start;
   font-family: Prompt;
   font-size: 26px;
@@ -244,17 +255,36 @@ input::-webkit-inner-spin-button {
   font-weight: 400;
 }
 .step p {
+  margin: 0;
   align-self: flex-start;
   font-family: Prompt;
   font-size: 14px;
   line-height: 16.8px;
   font-weight: 300;
 }
+.step:nth-child(2) {
+  margin-bottom: 34px;
+}
+.step:nth-child(2) h3 {
+  margin: 12px 0 5px;
+}
+.step:nth-child(3) {
+  margin-bottom: 23px;
+}
+.step:nth-child(3) h3 {
+  margin: 6px 0 4px;
+}
+.step:nth-child(4) h3 {
+  margin: 14px 0 4px;
+}
+.step:nth-child(4) {
+  margin-bottom: 0;
+}
 .call_back_2 {
   background: #F7F7F7;
-  padding: 23px 0;
 }
 .call_back_2 h2 {
+  margin: 25px 0 15px;
   font-family: Prompt;
   font-size: 24px;
   line-height: 28px;
@@ -265,16 +295,19 @@ input::-webkit-inner-spin-button {
   justify-content: space-between;
   flex-direction: column;
 }
+.flex_c_b button {
+  margin-bottom: 23px;
+}
 .blue_line {
+  min-height: 283px;
   background-color: #008DCD;
-  padding-top: 32px;
+  padding-top: 25px;
 }
 .blue_line .b_l_phone {
+  margin-top: 4px;
   cursor: pointer;
-  outline: none;
-  border: none;
   background: #008DCD;
-  height: 40px;
+  height: 47px;
   border: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 30px;
@@ -293,19 +326,21 @@ input::-webkit-inner-spin-button {
   outline: none;
   border: none;
   padding-right: 35px;
-  margin: 10px 0;
+  margin: 9px 0;
   color: #363636;
   text-align: end;
   background: #FFCC00;
   border-radius: 30px;
-  height: 40px;
+  height: 48px;
   width: 100%;
   font-family: Prompt;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 19.2px;
   font-weight: 600;
+  margin-bottom: 0;
 }
 .blue_line #b_l_i_ager {
+  margin-left: 7px;
   font-family: Prompt;
   font-size: 10px;
   line-height: 12px;
@@ -315,13 +350,15 @@ input::-webkit-inner-spin-button {
   color: #ffffff;
 }
 .b_l_text h2 {
+  margin: 0;
   color: #ffffff;
   font-family: Prompt;
-  font-size: 28px;
+  font-size: 33px;
   line-height: 33px;
   font-weight: 600;
 }
 .b_l_text p {
+  margin-top: 18px;
   color: #ffffff;
   font-family: Prompt;
   font-size: 14px;
@@ -329,12 +366,15 @@ input::-webkit-inner-spin-button {
   font-weight: 300;
 }
 .slider_heading {
+  margin: 12px 0 7px;
   font-family: Prompt;
   font-size: 28px;
   line-height: 33px;
   font-weight: 600;
 }
 .btn_feed {
+  margin-bottom: 7px;
+  padding: 0;
   height: 25px;
   background-color: #ffffff;
   border: none;
@@ -344,12 +384,15 @@ input::-webkit-inner-spin-button {
   outline: none;
 }
 .slider_feedback {
+  margin-bottom: 15px;
   display: flex;
   align-items: center;
 }
+.slider_feedback .feedback {
+  margin-left: 10px;
+}
 .slider_feedback img {
-  margin-right: 20px;
-  margin-bottom: 15px;
+  margin: 7px 20px 0 0;
   float: left;
 }
 .slider_feedback .f_name {
@@ -360,22 +403,24 @@ input::-webkit-inner-spin-button {
   font-weight: 400;
 }
 .slider_feedback .f_work {
-  margin: 0;
+  margin: 4px 0;
   font-family: Prompt;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
   font-weight: 400;
 }
 .slider_feedback .f_info {
   margin: 0;
+  margin-bottom: 4px;
   font-family: Prompt;
   font-size: 10px;
-  line-height: 12px;
+  line-height: 17px;
   font-weight: 300;
 }
 .slider_feedback .feedback_text {
+  margin-top: 3px;
   font-family: Prompt;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 14px;
   font-weight: 300;
   display: inline-block;
@@ -388,6 +433,7 @@ input::-webkit-inner-spin-button {
   background-color: #F7F7F7;
 }
 .advantages h2 {
+  margin: 0 0 0 -3px;
   font-family: Prompt;
   font-size: 28px;
   line-height: 33px;
@@ -400,6 +446,8 @@ input::-webkit-inner-spin-button {
 }
 .advantages .advantages_item {
   flex-basis: 30%;
+  margin-top: 20px;
+  padding-right: 5px;
 }
 .advantages .advantages_item div {
   border-radius: 50%;
@@ -410,8 +458,10 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   align-items: center;
 }
-.advantages .advantages_item div img {
-  width: 40px;
+.advantages .ada_item_item6,
+.advantages .ada_item_item4,
+.advantages .ada_item_item5 {
+  margin-top: 12px;
 }
 .adva_text {
   padding: 0 2px;
@@ -423,15 +473,24 @@ input::-webkit-inner-spin-button {
   font-weight: 300;
 }
 .ada_pading {
-  padding: 20px 0;
+  padding: 18px 0;
 }
 .guarantees {
   display: flex;
   align-items: center;
 }
+.guarantees_heading {
+  margin-bottom: 18px;
+  margin-top: 15px;
+  font-family: Prompt;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 600;
+}
 .g_blok_head {
+  padding-left: 6px;
   float: left;
-  margin-right: 10px;
+  margin-right: 11px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -443,18 +502,26 @@ input::-webkit-inner-spin-button {
 .g_blok_head img {
   width: 26px;
 }
+.only_mob_btn {
+  align-self: baseline;
+  margin-top: 18px;
+}
 .guarant_blok {
-  padding: 0 5px;
+  padding: 0 7px;
 }
 .guarant_blok p {
+  margin-top: 27px;
+  padding-left: 5px;
+  margin-bottom: 18px;
   font-family: Prompt;
   font-size: 12px;
   line-height: 14px;
   font-weight: 300;
 }
 .guarant_blok h3 {
+  margin-top: 10px;
   font-family: Prompt;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 19px;
   font-weight: 400;
 }
@@ -480,17 +547,18 @@ input::-webkit-inner-spin-button {
 }
 .doubts {
   margin-top: 20px;
-  padding: 20px 0;
+  padding: 20px 0 18px;
   background-color: #D2ECF7;
 }
 .doubts h1 {
+  margin-top: 0;
   font-family: Prompt;
   font-size: 28px;
   line-height: 33px;
   font-weight: 600;
 }
 .doubts_item {
-  margin: 5px 0;
+  margin: 9px 0;
   font-family: Prompt;
   font-size: 14px;
   line-height: 17px;
@@ -499,8 +567,8 @@ input::-webkit-inner-spin-button {
   border-radius: 32px;
 }
 .doubts_heding {
-  min-height: 90px;
-  padding: 20px;
+  min-height: 80px;
+  padding: 15px 25px 15px 25px;
   outline: none;
   border: none;
   display: flex;
@@ -517,13 +585,13 @@ input::-webkit-inner-spin-button {
   background-color: #F7F7F7;
 }
 .doubts_item[open] .doubts_heding::after {
-  content: "\f107";
+  content: "\f106";
   font-family: FontAwesome;
   margin-right: 6px;
   color: #008DCD;
 }
 .doubts_heding::after {
-  content: "\f106";
+  content: "\f107";
   font-family: FontAwesome;
   margin-right: 6px;
   color: #008DCD;
@@ -532,7 +600,7 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 .f_par {
-  padding: 15px 0;
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -551,7 +619,7 @@ input::-webkit-inner-spin-button {
 .svg-inline--fa.fa-w-14,
 .svg-inline--fa.fa-w-10,
 .svg-inline--fa.fa-w-18 {
-  width: 40px !important;
+  width: 15px !important;
 }
 footer {
   background-color: #E9E9E9;
@@ -570,8 +638,8 @@ footer {
   display: flex;
   align-items: center;
   position: absolute;
-  top: -45px;
-  left: 240px;
+  top: -39px;
+  left: 245px;
   width: 35px;
   height: 26px;
   cursor: pointer;
@@ -589,11 +657,11 @@ footer {
 }
 .menu_btn_footer > span::before {
   content: '';
-  top: -10px;
+  top: -15px;
 }
 .menu_btn_footer > span::after {
   content: '';
-  top: 10px;
+  top: 15px;
 }
 .menu_box_footer {
   display: block;
@@ -644,7 +712,7 @@ footer {
   transform: scaleY(1);
 }
 .call_back_footer {
-  padding: 20px;
+  padding: 9px 0;
   border-bottom: 1px solid #C4C4C4;
 }
 .back_call_i_footer::placeholder {
@@ -664,7 +732,7 @@ footer {
   font-weight: 300;
 }
 .back_call_bth_footer {
-  margin: 10px 0;
+  margin: 10px 0 5px;
   color: #ffffff;
   text-align: center;
   background: #008DCD;
@@ -692,6 +760,9 @@ footer {
   font-size: 10px;
   line-height: 12px;
   font-weight: 300;
+}
+.logo_f {
+  width: 129px;
 }
 .blur {
   filter: blur(5px);
@@ -814,7 +885,8 @@ footer {
     display: none;
   }
   .hamburger-menu {
-    flex-basis: 80%;
+    flex-basis: 83%;
+    padding-top: 5px;
   }
   .menu_box {
     display: flex;
@@ -828,9 +900,6 @@ footer {
     background-color: rgba(255, 255, 255, 0);
     padding: 0;
     margin: 0;
-  }
-  .menu_box li {
-    display: inline;
   }
   .menu_box a {
     padding: 0;
@@ -852,26 +921,37 @@ footer {
     justify-content: space-between;
   }
   .header_heding {
-    margin-top: 55px;
+    font-family: Prompt;
+    font-size: 43px;
+    line-height: 53px;
+    font-weight: 900;
+    margin-top: 40px;
     color: #ffffff;
     flex-basis: 74%;
   }
   .header_heding_2 {
+    margin-top: 24px;
+    font-family: Prompt;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 600;
     flex-basis: 70%;
     color: #ffffff;
   }
   .send {
-    margin-top: 25px;
+    margin-top: 21px;
   }
   .were_the_best {
     display: flex;
     flex-wrap: wrap;
   }
   .were_img {
-    flex-basis: 50%;
+    margin-top: 11px;
+    flex-basis: 57%;
     order: 1;
   }
   .only_tablets {
+    margin-top: 17px;
     display: block;
     margin-bottom: 0;
     font-family: Prompt;
@@ -883,16 +963,21 @@ footer {
     display: none;
   }
   .w_t_b {
-    flex-basis: 47%;
+    flex-basis: 43%;
   }
   .were_text {
+    margin-top: 21px;
     flex-basis: 50%;
     font-family: Prompt;
     font-size: 14px;
     line-height: 16.8px;
     font-weight: 300;
   }
+  .were_btn {
+    margin-top: 30px;
+  }
   .steps {
+    padding-top: 32px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -904,6 +989,7 @@ footer {
     align-items: center;
   }
   .step h3 {
+    margin-top: 10px;
     font-family: Prompt;
     font-size: 26px;
     line-height: 31px;
@@ -915,10 +1001,48 @@ footer {
     line-height: 19px;
     font-weight: 300;
   }
+  .step:nth-child(1) {
+    padding-left: 40px;
+  }
+  .step:nth-child(1) h3 {
+    margin-top: 18px;
+    margin-bottom: 13px;
+  }
+  .step:nth-child(2) {
+    margin-bottom: 18px;
+  }
+  .step:nth-child(2) h3 {
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 13px;
+  }
+  .step:nth-child(2) p {
+    margin-left: 15px;
+  }
+  .step:nth-child(3) {
+    padding-top: 6px;
+    padding-left: 43px;
+  }
+  .step:nth-child(3) h3 {
+    margin-top: 12px;
+    margin-bottom: 13px;
+  }
+  .step:nth-child(4) {
+    padding-top: 17px;
+  }
+  .step:nth-child(4) h3 {
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 13px;
+  }
+  .step:nth-child(4) p {
+    margin-left: 15px;
+  }
   .flex_c_b {
     flex-direction: row;
   }
   .call_back_2 {
+    padding: 45px 0 15px;
     display: flex;
     justify-content: space-between;
   }
@@ -928,6 +1052,12 @@ footer {
     font-size: 28px;
     line-height: 33px;
     font-weight: 600;
+  }
+  .send_tb {
+    margin-top: 38px;
+  }
+  .blue_line {
+    min-height: 171px;
   }
   .b_l_flex {
     display: flex;
@@ -942,8 +1072,20 @@ footer {
   .b_l_btn {
     flex-basis: 40%;
   }
+  .slider_heading {
+    margin: 43px 0 27px;
+    font-size: 35px;
+  }
   .slider_feedback {
-    justify-content: space-between;
+    justify-content: flex-start;
+    margin-bottom: 31px;
+  }
+  .slider_feedback .feedback {
+    margin-left: 34px;
+  }
+  .slider_feedback .feedback_text {
+    font-size: 14px;
+    line-height: 15px;
   }
   .d_2 {
     position: static;
@@ -951,6 +1093,18 @@ footer {
   }
   .feedback {
     flex-basis: 40%;
+  }
+  .d_2 {
+    margin-right: 59px;
+  }
+  .tb_margin {
+    margin-right: 11px;
+  }
+  .how {
+    margin-bottom: 100px;
+  }
+  .ada_pading {
+    padding-top: 31px;
   }
   .advantages h2 {
     font-family: Prompt;
@@ -960,6 +1114,7 @@ footer {
   }
   .advantages .advantages_item {
     flex-basis: 15%;
+    margin-top: 32px;
   }
   .advantages .advantages_item div {
     width: 100px;
@@ -968,11 +1123,20 @@ footer {
   .advantages .advantages_item div img {
     width: 45px;
   }
+  .advantages .ada_item_item6,
+  .advantages .ada_item_item4,
+  .advantages .ada_item_item5 {
+    margin-top: 32px;
+  }
   .adva_text {
     font-family: Prompt;
     font-size: 12px;
     line-height: 14px;
     font-weight: 300;
+  }
+  .guarantees_heading {
+    font-size: 35px;
+    margin-top: 62px;
   }
   .guarantees {
     justify-content: space-between;
@@ -987,21 +1151,43 @@ footer {
   }
   .g_blok_head {
     float: none;
+    width: 100px;
+    height: 101px;
+  }
+  .g_blok_head img {
+    width: 50px;
   }
   .guarant_blok {
-    flex-basis: 31%;
+    flex-basis: 33%;
   }
   .guarant_blok h3 {
+    margin-bottom: 0;
     font-family: Prompt;
     font-size: 20px;
     line-height: 24px;
     font-weight: 300;
   }
   .guarant_blok p {
+    margin-top: 14px;
     min-height: 90px;
+  }
+  .doubts_item {
+    font-size: 17px;
+  }
+  .doubts {
+    margin-top: 42px;
+    padding-bottom: 27px;
+    padding-top: 40px;
+  }
+  .doubts h1 {
+    font-size: 35px;
   }
   .doubts_heding {
     min-height: 20px;
+  }
+  .f_par {
+    padding-bottom: 37px;
+    padding-top: 31px;
   }
   .flex_part {
     flex-basis: 90%;
@@ -1015,9 +1201,8 @@ footer {
     justify-content: space-between;
   }
   .hamburger-menu_footer {
-    margin-left: 20px;
-    flex-basis: 80%;
-    padding-top: 10px;
+    flex-basis: 83%;
+    padding-top: 3px;
   }
   .menu_box_footer {
     display: flex;
@@ -1054,6 +1239,7 @@ footer {
     display: none;
   }
   .call_back_footer {
+    padding-top: 35px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -1062,11 +1248,16 @@ footer {
     flex-basis: 33%;
   }
   .call_back_footer .back_call_i_footer {
+    height: 46px;
     flex-basis: 32%;
   }
   .call_back_footer .back_call_bth_footer {
+    height: 46px;
     margin: 0;
     flex-basis: 32%;
+  }
+  .logo_f {
+    width: 100px;
   }
   .iag_f {
     margin-left: -420px;
